@@ -44,11 +44,12 @@
                       font-size: 15px;
                       background-color: rgb(58, 143, 248);
                       font-color: rgb(0, 0, 0);
-                      padding: 2px;
+                      padding: 4px;
                       border-radius: 15px 15px 15px 15px;
                       width: auto; 
                       float: right;
-                      vertical-align: middle;
+                      display: inline-block;
+                      align-items: center;
             }
             
             .date {font-family: monospace; 
@@ -61,6 +62,7 @@
                    margin-right: 10px;
                    margin-top: 10px;
                    border-radius: 6px 6px 0px 0px;
+                   height: auto;
             }   
             
             .post {background-color: rgb(225, 230, 234); 
@@ -172,6 +174,7 @@
                          margin-bottom: 20px;
                          margin-top: 75px;
                          cursor: default;
+                         position: absolute;
             }
 
             .View_Button {height: 20px;
@@ -189,13 +192,17 @@
                           cursor: default;
                           bottom: 30px;
                           text-align: middle;
-                          font-style: italic;
                           display: flex;
                           text-align: middle;
                         
             }
 
             .View_Button:hover {background-color: rgb(7, 179, 232);
+
+            }
+
+            a {text-decoration: none;
+               font-color: rgb(255, 255, 255);
 
             }
             
