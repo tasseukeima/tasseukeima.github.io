@@ -15,11 +15,12 @@
                  color: rgb(255, 255, 255); 
                  padding: 6px;
                  margin-bottom: 0px;
+                 cursor: default;
             }
             
              h2 {background-color: rgb(10, 10, 10);
-                margin-top: 0px;
-                margin-bottom: 150px;
+                 margin-top: 0px;
+                 margin-bottom: 150px;
             }
 
             h3 {font-family: sans-serif;
@@ -40,6 +41,33 @@
                          margin-bottom: 10px;
             }
             
+            .date_container {background-color: rgb(0, 0, 0); 
+                             color: rgb(255, 255, 255); 
+                             padding:12px;
+                             margin-bottom: 0px;
+                             margin-top: 10px;
+                             border-radius: 6px 6px 0px 0px;
+                             height: 25px;
+                             vertical-align: middle;
+                             object-position: center;
+            }
+
+
+            .date_container:hover {background-color: rgb(25, 25, 25);
+
+            }
+
+            .date_text {font-family: monospace;
+                        font-color: rgb(255. 255. 255); 
+                        font-size: 18px;
+                        height: auto;
+                        width: auto;
+                        padding: 1px;
+                        float: left;
+                        vertical-align: middle;
+                        display: inline;
+            }
+
             .post_id {font-family: monospace;
                       font-size: 15px;
                       background-color: rgb(58, 143, 248);
@@ -48,28 +76,17 @@
                       border-radius: 15px 15px 15px 15px;
                       width: auto; 
                       float: right;
-                      display: inline-block;
-                      align-items: center;
+                      vertical-align: middle;
+                      display: inline;
             }
-            
-            .date {font-family: monospace; 
-                   font-size: 15px; 
-                   background-color: rgb(0, 0, 0); 
-                   color: rgb(255, 255, 255); 
-                   padding: 6px; 
-                   margin-bottom: 0px;
-                   margin-left: 10px;
-                   margin-right: 10px;
-                   margin-top: 10px;
-                   border-radius: 6px 6px 0px 0px;
-                   height: auto;
-            }   
+
+            .post_id:hover {background-color: rgb(67, 134, 230);
+              
+            }
             
             .post {background-color: rgb(225, 230, 234); 
                    font size: 20; 
                    padding: 8px;
-                   margin-left: 10px;
-                   margin-right: 10px;
                    margin-top: 0px;
                    border-style: solid;
                    border-width: 1px; 
@@ -77,6 +94,10 @@
                    border-right-color: rgb(0, 0, 0);
                    border-bottom-color: rgb(0, 0, 0);
                    border-radius: 0px 0px 6px 6px;
+            }
+
+            .post:hover {background-color: rgb(233, 235, 244);
+
             }
 
             .lower_title {margin: 0px auto; 
@@ -87,7 +108,7 @@
                           font-family: sans-serif;
                           font-size: 14px;
                           margin-top: 0px;
-                          font-weight: thin;
+                          font-weight: lighter;
                           
             }
             
@@ -107,6 +128,9 @@
             }
             
             h6 {text-align: center;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
             }
             
             #Home {margin-right: 12px;
@@ -153,27 +177,17 @@
             #Archived:hover {background-color: rgb(100, 100, 100);
 
             }
-            
-            #Miscellaneous {margin-right: 12px;
-                            margin-left:12px;
-                            background-color: rgb(0, 0, 0);
-                            padding: 7px;
-                            color: rgb(255, 255, 255);
-                            text-decoration: none;
-                            border-radius: 20px 20px 20px 20px;
-                            font-family: sans-serif;
-                            font-style: thin;
-            }
-            
-            #Miscellaneous:hover {background-color: rgb(100, 100, 100);
 
-            }
-
-            .Total_Post {margin-left: 150px;
-                         margin-right: 150px;
+            .Total_Post {margin-left: 175px;
+                         margin-right: 175px;
                          margin-bottom: 20px;
                          margin-top: 75px;
                          cursor: default;
+            }
+
+            .Total_Post:click {border-color: rgb(75, 191, 253);
+                               border-width: 3px;
+
             }
 
             .View_Button {height: 20px;
@@ -181,18 +195,16 @@
                           font-family: Arial, Helvetica, sans-serif;
                           font-color: rgb(255, 255, 255);
                           font-weight: bold;
-                          width: 30px;
                           background-color: rgb(13, 167, 214);
-                          float: right;
+                          color: rgb(255, 255, 255);
                           padding: 10px;
-                          margin: 8px;
-                          position: relative;
                           border-radius: 10px 10px 10px 10px;
                           cursor: default;
-                          bottom: 30px;
                           text-align: middle;
-                          display: flex;
-                          text-align: middle;
+                          text-align: center;
+                          padding-left: 10px;
+                          padding-right: 10px;
+                          border-radius: 0px 0px 6px 6px;
                         
             }
 
@@ -205,8 +217,6 @@
 
             }
 
-            
-            
         </style>
     </head>
     <body>
@@ -228,9 +238,12 @@
         
         
         <div class="Total_Post">
-        <div class="post_title">Website Update 1.15</div>        
-        <div class="date">Finished on Tuesday, February 23th, 2021 -- (10:00 PM) <div class="post_id">Post 219.2/21A</div></div>
+        <div class="post_title">Update 1.2</div>        
+        <div class="date_container">
+        <div class="date_text">Updated on Saturday, February 27th, 2021 -- (9:16 PM)</div>
+        <div class="post_id">227.2/21</div></div>
         <div class="post">
+        </div>
             A new redesign gives the website a fresh new look. <br><br>
             Along with the redesign, a smaller header provides a better asthetic overall.<br><br>
             Various other changes, including the increased margin lenghts on both sides, gives better context to the posts,<br>
@@ -257,10 +270,8 @@
             <ul>
             <br><br>It has almost been one month since I started coding...<br>
             I hope I learn much more in the future.<br><br>CAM
-        </div>    
         </div>
-        
-        
+         
         <h6>Site created on 2/6/2021 at 5:06 PM</h6>
         
     </body>
