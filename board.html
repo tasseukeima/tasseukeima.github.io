@@ -15,11 +15,12 @@
                  color: rgb(255, 255, 255); 
                  padding: 6px;
                  margin-bottom: 0px;
+                 cursor: default;
             }
             
              h2 {background-color: rgb(10, 10, 10);
-                margin-top: 0px;
-                margin-bottom: 150px;
+                 margin-top: 0px;
+                 margin-bottom: 150px;
             }
 
             h3 {font-family: sans-serif;
@@ -40,6 +41,33 @@
                          margin-bottom: 10px;
             }
             
+            .date_container {background-color: rgb(0, 0, 0); 
+                             color: rgb(255, 255, 255); 
+                             padding:12px;
+                             margin-bottom: 0px;
+                             margin-top: 10px;
+                             border-radius: 6px 6px 0px 0px;
+                             height: 25px;
+                             vertical-align: middle;
+                             object-position: center;
+            }
+
+
+            .date_container:hover {background-color: rgb(25, 25, 25);
+
+            }
+
+            .date_text {font-family: monospace;
+                        font-color: rgb(255. 255. 255); 
+                        font-size: 18px;
+                        height: auto;
+                        width: auto;
+                        padding: 1px;
+                        float: left;
+                        vertical-align: middle;
+                        display: inline;
+            }
+
             .post_id {font-family: monospace;
                       font-size: 15px;
                       background-color: rgb(58, 143, 248);
@@ -48,28 +76,17 @@
                       border-radius: 15px 15px 15px 15px;
                       width: auto; 
                       float: right;
-                      display: inline-block;
-                      align-items: center;
+                      vertical-align: middle;
+                      display: inline;
             }
-            
-            .date {font-family: monospace; 
-                   font-size: 15px; 
-                   background-color: rgb(0, 0, 0); 
-                   color: rgb(255, 255, 255); 
-                   padding: 6px; 
-                   margin-bottom: 0px;
-                   margin-left: 10px;
-                   margin-right: 10px;
-                   margin-top: 10px;
-                   border-radius: 6px 6px 0px 0px;
-                   height: auto;
-            }   
+
+            .post_id:hover {background-color: rgb(67, 134, 230);
+              
+            }
             
             .post {background-color: rgb(225, 230, 234); 
                    font size: 20; 
                    padding: 8px;
-                   margin-left: 10px;
-                   margin-right: 10px;
                    margin-top: 0px;
                    border-style: solid;
                    border-width: 1px; 
@@ -77,6 +94,10 @@
                    border-right-color: rgb(0, 0, 0);
                    border-bottom-color: rgb(0, 0, 0);
                    border-radius: 0px 0px 6px 6px;
+            }
+
+            .post:hover {background-color: rgb(233, 235, 244);
+
             }
 
             .lower_title {margin: 0px auto; 
@@ -87,7 +108,7 @@
                           font-family: sans-serif;
                           font-size: 14px;
                           margin-top: 0px;
-                          font-weight: thin;
+                          font-weight: lighter;
                           
             }
             
@@ -107,6 +128,9 @@
             }
             
             h6 {text-align: center;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
             }
             
             #Home {margin-right: 12px;
@@ -153,27 +177,17 @@
             #Archived:hover {background-color: rgb(100, 100, 100);
 
             }
-            
-            #Miscellaneous {margin-right: 12px;
-                            margin-left:12px;
-                            background-color: rgb(0, 0, 0);
-                            padding: 7px;
-                            color: rgb(255, 255, 255);
-                            text-decoration: none;
-                            border-radius: 20px 20px 20px 20px;
-                            font-family: sans-serif;
-                            font-style: thin;
-            }
-            
-            #Miscellaneous:hover {background-color: rgb(100, 100, 100);
 
-            }
-
-            .Total_Post {margin-left: 150px;
-                         margin-right: 150px;
+            .Total_Post {margin-left: 175px;
+                         margin-right: 175px;
                          margin-bottom: 20px;
                          margin-top: 75px;
                          cursor: default;
+            }
+
+            .Total_Post:click {border-color: rgb(75, 191, 253);
+                               border-width: 3px;
+
             }
 
             .View_Button {height: 20px;
@@ -181,18 +195,16 @@
                           font-family: Arial, Helvetica, sans-serif;
                           font-color: rgb(255, 255, 255);
                           font-weight: bold;
-                          width: 30px;
                           background-color: rgb(13, 167, 214);
-                          float: right;
+                          color: rgb(255, 255, 255);
                           padding: 10px;
-                          margin: 8px;
-                          position: relative;
                           border-radius: 10px 10px 10px 10px;
                           cursor: default;
-                          bottom: 30px;
                           text-align: middle;
-                          display: flex;
-                          text-align: middle;
+                          text-align: center;
+                          padding-left: 10px;
+                          padding-right: 10px;
+                          border-radius: 0px 0px 6px 6px;
                         
             }
 
@@ -227,20 +239,26 @@
         </h2>
           
 
+
         <div class="Total_Post">
         <div class="post_title">Update 6</div>        
-        <div class="date">Uploaded on Saturday, February 20th, 2021 -- (4:04 PM)<div class="post_id">Post 22.2/21</div></div>
+        <div class="date_container">
+        <div class="date_text">Uploaded on 2/20/2021 -- (4:04 PM)</div>
+        <div class="post_id">22.2/21</div></div>
         <div class="post">
             It is a nice day outside. Too bad I can't go for a walk...<br>
             I need to learn how to cherish these tyoes of days more often -- that is a rare day where I don't have to worry about
             *school*.<br>
         </div>
-        </div>    
-
+        </div>
       
+
+
         <div class="Total_Post">
         <div class="post_title">Update 5</div>        
-        <div class="date">Uploaded on Friday, February 19th, 2021 -- (11:11 PM)<div class="post_id">Post 219.2/21D</div></div>
+        <div class="date_container">
+        <div class="date_text">Uploaded on 2/19/2021 -- (11:11 PM)</div>
+        <div class="post_id">219.2/21D</div></div>
         <div class="post">
             This is the first post uploaded using Sublime Text<br> I really needed to move away from the text
             editor on the main GitHub website, it was just bland. Sublime text actually highlights and colors 
@@ -249,10 +267,13 @@
         </div>
         </div>
 
+        
 
-        <div class="Total_Post">        
+        <div class="Total_Post">
         <div class="post_title">Update 4</div>        
-        <div class="date">Uploaded on Friday, February 19th, 2021 -- (9:07 PM) <div class="post_id">Post 219.2/21</div></div>
+        <div class="date_container">
+        <div class="date_text">Uploaded on 2/19/2021 -- (9:07 PM)</div>
+        <div class="post_id">219.2/21</div></div>
         <div class="post">
             Finally! It was so easy too. Below, I will outline how I will categorize this site:<br><br><br>
             Pages: [Home] [Main Board] [Archived] [Miscellaneous]<br>
@@ -266,11 +287,14 @@
             EDIT: Like a dumbass I forgot to edit the title and post ID.
         </div>
         </div>
-        
+
+
 
         <div class="Total_Post">
         <div class="post_title">Update 3</div>        
-        <div class="date">Uloaded on Thursday, February 18th, 2021 -- (7:24 PM)<div class="post_id">Post 218.2/21</div></div>
+        <div class="date_container">
+        <div class="date_text">Uploaded on 2/18/2021 -- (7:24 PM)</div>
+        <div class="post_id">218.2/21</div></div>
         <div class="post">
             P A I N.<br><br>
             This week just keeps on going...<br><br> and going...<br><br> Why do I have to do useless work? I could be doing
@@ -279,12 +303,15 @@
             husk slaving away the time that I could be using to learn programming. This week feels like it has lasted a month.<br><br>
             Make it end.
         </div>
-        </div>    
+        </div>
+   
         
 
         <div class="Total_Post">
         <div class="post_title">Update 2</div>        
-        <div class="date">Uploaded on Tuesday, February 9th, 2021 -- (9:19 PM)<div class="post_id">Post 292/21</div></div>
+        <div class="date_container">
+        <div class="date_text">Uploaded on 2/9/2021 -- (9:19 PM)</div>
+        <div class="post_id">292/21</div></div>
         <div class="post">
             At the moment, I'm trying to learn how to add multiple pages to the site.<br> Maybe I'm getting too ahead of myself,
             as I have literally been programming for 4 days, but I guess it's the effort that counts. I want to add a [Home Page],
@@ -293,11 +320,14 @@
             <br> Good night fictional audience!
         </div>
         </div>
-        
-        
+
+
+
         <div class="Total_Post">
         <div class="post_title">Update 1</div>        
-        <div class="date">Uploaded on Monday, February 8th, 2021 -- (5:55 PM)<div class="post_id">Post 282/21B</div></div>
+        <div class="date_container">
+        <div class="date_text">Uploaded on 2/8/2021 -- (5:55 PM)</div>
+        <div class="post_id">282/21B</div></div>
         <div class="post">
             It takes hours to complete the simplest tasks. HOURS.<br> Overall though, I'm having quite a fun time coding. 
             It can be frustrating at times, especially when you intend to do modify the smallest element, but
@@ -308,22 +338,28 @@
             it some life!
         </div>
         </div>
-            
-       
-        <div class="Total_Post">            
+             
+
+
+        <div class="Total_Post">
         <div class="post_title">Aesthetic</div>        
-        <div class="date">Uploaded on Monday, February 8th, 2021 -- (2:11 PM)<div class="post_id">Post 282/21A</div></div>
+        <div class="date_container">
+        <div class="date_text">Uploaded on 2/8/2021 -- (2:11 PM)</div>
+        <div class="post_id">282/21A</div></div>
         <div class="post">
             It took me almost 3 hours to create a heading to the website. It's almost pathetic... but at least I could 
             eventually figure it out.<br> For the overall aesthetic, I want to keep this site simple and professional
             looking; I'm trying to achieve this by using light greys, whites, blacks and beiges.
         </div>
         </div>
-             
 
-        <div class="Total_Post">        
-        <div class="post_title">Miscellaneous 1</div>       
-        <div class="date">Uploaded on Monday, February 8th, 2021 -- (10:54 AM)<div class="post_id">Post 282/21</div></div>
+
+
+        <div class="Total_Post">
+        <div class="post_title">Miscellaneous 1</div>        
+        <div class="date_container">
+        <div class="date_text">Uploaded on 2/8/2021 -- (10:54 PM)</div>
+        <div class="post_id">282/21</div></div>
         <div class="post">
             I'm learning more CSS text properties and selectors. Today is a school day but I don't have to do anything
             really; most of what is done in class is honestly useless. The only class that is really worth listening to 
@@ -331,28 +367,34 @@
             of this update is. I'm probably going to delete this later.<br><br>I talk as if anyone is listening.
         </div>
         </div>
-            
 
-        <div class="Total_Post">           
+      
+
+        <div class="Total_Post">
         <div class="post_title">Functionality</div>        
-        <div class="date"> Uploaded on Saturday, February 6th, 2021 -- (5:43 PM)<div class="post_id">Post 262/21A</div></div>
+        <div class="date_container">
+        <div class="date_text">Uploaded on 2/6/2021 -- (5:43 PM)</div>
+        <div class="post_id">262/21A</div></div>
         <div class="post">
             As for functionality, I really don't think that there are any plans. I want to add cool buttons,
             better asthetic, and... just whatever really. Again, I'm a beginner to this so it will take me a while
             to really do anything.
         </div>
         </div>
-        
-  
-        <div class="Total_Post">      
+
+
+        <div class="Total_Post">
         <div class="post_title">Very First Post</div>        
-        <div class="date"> Uploaded on Saturday, February 6th, 2021 -- (5:11 PM)<div class="post_id">Post 262/21</div></div>
+        <div class="date_container">
+        <div class="date_text">Uploaded on 2/6/2021 -- (5:11 PM)</div>
+        <div class="post_id">262/21</div></div>
         <div class="post">
             This is just the very basic outline for a website project. <br>
             I plan on updating this site frequently... err whenever I can. <br><br>
             EDIT: I'm trying to add color and fonts to this site. I want to at least make it look decent.
         </div>
         </div>
+
         
         <h6>Site created on 2/6/2021 at 5:06 PM</h6>
         
