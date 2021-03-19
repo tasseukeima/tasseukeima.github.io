@@ -9,7 +9,7 @@
                    margin: 0px;
             }
             
-             h1 {font-family: Sans-Serif;
+             h1 {font: normal x-small verdana, arial, helvetica, sans-serif;
                  font-size: 30px; 
                  background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(50, 50, 50)); 
                  color: rgb(255, 255, 255); 
@@ -23,7 +23,7 @@
                  margin-bottom: 150px;
             }
 
-            h3 {font-family: sans-serif;
+            h3 {font: normal x-small verdana, arial, helvetica, sans-serif;
                 margin-top: 50px;
                 float: 10px;
                 width: auto;
@@ -34,37 +34,37 @@
                 margin-bottom: 25px;
             }
 
-            .post_title {font-family: Arial, Helvetica, sans-serif; 
+            .post_title {font: normal x-small verdana, arial, helvetica, sans-serif;
+                         color: rgb(255, 255, 255);
                          font-size: 40px; 
-                         margin-left: 10px;
-                         margin-right: 10px;
-                         margin-bottom: 10px;
+                         font-weight: lighter;
+                         margin-bottom: 0px;
+                         background-color: rgb(0, 0, 0);
+                         padding: 12px;
+                         padding-bottom: 0px;
+                         border-radius: 3px 3px 0px 0px;
             }
             
             .date_container {background-color: rgb(0, 0, 0); 
                              color: rgb(255, 255, 255); 
                              padding:12px;
+                             padding-bottom: 0px;
                              margin-bottom: 0px;
-                             margin-top: 10px;
-                             border-radius: 6px 6px 0px 0px;
+                             margin-top: 0px;
+                             border-radius: 0px 0px 0px 0px;
                              height: 25px;
                              vertical-align: middle;
                              object-position: center;
             }
 
-
-            .date_container:hover {background-color: rgb(25, 25, 25);
-
-            }
-
             .date_text {font-family: monospace;
-                        font-color: rgb(255. 255. 255); 
-                        font-size: 18px;
+                        color: rgb(200, 200, 200); 
+                        font-size: 14px;
                         height: auto;
                         width: auto;
                         padding: 1px;
                         float: left;
-                        vertical-align: middle;
+                        vertical-align: bottom;
                         display: inline;
             }
 
@@ -84,20 +84,18 @@
               
             }
             
-            .post {background-color: rgb(233, 235, 244); 
-                   font size: 20; 
-                   padding: 8px;
+            .post {background-color: rgb(233, 235, 244);
+                   font size: 30px; 
+                   font: normal x-small verdana, arial, helvetica, sans-serif;
+                   padding: 12px;
                    margin-top: 0px;
                    border-style: solid;
                    border-width: 1px; 
-                   border-left-color: rgb(0, 0, 0);
-                   border-right-color: rgb(0, 0, 0);
-                   border-bottom-color: rgb(0, 0, 0);
-                   border-radius: 0px 0px 6px 6px;
+                   border-left-color: rgb(230, 230, 230);
+                   border-right-color: rgb(230, 230, 230);
             }
 
             .post:hover {background-color: rgb(240, 242, 250);
-
             }
 
             .lower_title {margin: 0px auto; 
@@ -217,9 +215,7 @@
                font-color: rgb(255, 255, 255);
 
             }
-            
-            
-
+  
         </style>
     </head>
     <body>
@@ -229,22 +225,21 @@
                     <span id="tass_board">
                         Main Board
                     </span>
+                      <h2 class="lower_title">
+                        <a href="index.html" id="Home">Home</a>
+                        <a href="board.html" id="Main_Board">Main Board</a>
+                        <a href="archived.html" id="Archived">Archived</a>
+                      </h2>
                 </h1>
             </div>
             
             
-        <h2 class="lower_title">
-            <a href="index.html" id="Home">Home</a>
-            <a href="board.html" id="Main_Board">Main Board</a>
-            <a href="archived.html" id="Archived">Archived</a>
-        </h2>
+        
           
 
         <div class="Total_Post">
-        <div class="post_title">WORK</div>        
-        <div class="date_container">
-        <div class="date_text">Uploaded on 3/1/2021 -- (6:50 PM)</div>
-        <div class="post_id">312/21</div></div>
+        <div class="post_title">WORK<div class="post_id">312/21</div></div>        
+        <div class="date_container"><div class="date_text">Uploaded on 3/1/2021 -- (6:50 PM)</div></div>
         <div class="post">
             Can this quarter be done already?<br><br>Can school just be done already?<br><br>Thanks for coming to my Ted Talk.
         </div>
@@ -253,10 +248,8 @@
 
 
         <div class="Total_Post">
-        <div class="post_title">Update 6</div>        
-        <div class="date_container">
-        <div class="date_text">Uploaded on 2/20/2021 -- (4:04 PM)</div>
-        <div class="post_id">22.2/21</div></div>
+        <div class="post_title">Update 6<div class="post_id">22.2/21</div></div>        
+        <div class="date_container"><div class="date_text">Uploaded on 2/20/2021 -- (4:04 PM)</div></div>
         <div class="post">
             It is a nice day outside. Too bad I can't go for a walk...<br>
             I need to learn how to cherish these tyoes of days more often -- that is a rare day where I don't have to worry about
@@ -267,10 +260,8 @@
 
 
         <div class="Total_Post">
-        <div class="post_title">Update 5</div>        
-        <div class="date_container">
-        <div class="date_text">Uploaded on 2/19/2021 -- (11:11 PM)</div>
-        <div class="post_id">219.2/21D</div></div>
+        <div class="post_title">Update 5<div class="post_id">219.2/21D</div></div>        
+        <div class="date_container"><div class="date_text">Uploaded on 2/19/2021 -- (11:11 PM)</div></div>
         <div class="post">
             This is the first post uploaded using Sublime Text<br> I really needed to move away from the text
             editor on the main GitHub website, it was just bland. Sublime text actually highlights and colors 
@@ -282,10 +273,8 @@
         
 
         <div class="Total_Post">
-        <div class="post_title">Update 4</div>        
-        <div class="date_container">
-        <div class="date_text">Uploaded on 2/19/2021 -- (9:07 PM)</div>
-        <div class="post_id">219.2/21</div></div>
+        <div class="post_title">Update 4<div class="post_id">219.2/21</div></div>        
+        <div class="date_container"><div class="date_text">Uploaded on 2/19/2021 -- (9:07 PM)</div></div>
         <div class="post">
             Finally! It was so easy too. Below, I will outline how I will categorize this site:<br><br><br>
             Pages: [Home] [Main Board] [Archived] [Miscellaneous]<br>
@@ -303,10 +292,8 @@
 
 
         <div class="Total_Post">
-        <div class="post_title">Update 3</div>        
-        <div class="date_container">
-        <div class="date_text">Uploaded on 2/18/2021 -- (7:24 PM)</div>
-        <div class="post_id">218.2/21</div></div>
+        <div class="post_title">Update 3<div class="post_id">218.2/21</div></div>        
+        <div class="date_container"><div class="date_text">Uploaded on 2/18/2021 -- (7:24 PM)</div></div>
         <div class="post">
             P A I N.<br><br>
             This week just keeps on going...<br><br> and going...<br><br> Why do I have to do useless work? I could be doing
@@ -320,10 +307,8 @@
         
 
         <div class="Total_Post">
-        <div class="post_title">Update 2</div>        
-        <div class="date_container">
-        <div class="date_text">Uploaded on 2/9/2021 -- (9:19 PM)</div>
-        <div class="post_id">292/21</div></div>
+        <div class="post_title">Update 2<div class="post_id">292/21</div></div>       
+        <div class="date_container"><div class="date_text">Uploaded on 2/9/2021 -- (9:19 PM)</div></div>
         <div class="post">
             At the moment, I'm trying to learn how to add multiple pages to the site.<br> Maybe I'm getting too ahead of myself,
             as I have literally been programming for 4 days, but I guess it's the effort that counts. I want to add a [Home Page],
@@ -336,10 +321,8 @@
 
 
         <div class="Total_Post">
-        <div class="post_title">Update 1</div>        
-        <div class="date_container">
-        <div class="date_text">Uploaded on 2/8/2021 -- (5:55 PM)</div>
-        <div class="post_id">282/21B</div></div>
+        <div class="post_title">Update 1<div class="post_id">282/21B</div></div>        
+        <div class="date_container"><div class="date_text">Uploaded on 2/8/2021 -- (5:55 PM)</div></div>
         <div class="post">
             It takes hours to complete the simplest tasks. HOURS.<br> Overall though, I'm having quite a fun time coding. 
             It can be frustrating at times, especially when you intend to do modify the smallest element, but
@@ -354,10 +337,8 @@
 
 
         <div class="Total_Post">
-        <div class="post_title">Aesthetic</div>        
-        <div class="date_container">
-        <div class="date_text">Uploaded on 2/8/2021 -- (2:11 PM)</div>
-        <div class="post_id">282/21A</div></div>
+        <div class="post_title">Aesthetic<div class="post_id">282/21A</div></div>        
+        <div class="date_container"><div class="date_text">Uploaded on 2/8/2021 -- (2:11 PM)</div></div>
         <div class="post">
             It took me almost 3 hours to create a heading to the website. It's almost pathetic... but at least I could 
             eventually figure it out.<br> For the overall aesthetic, I want to keep this site simple and professional
@@ -368,10 +349,8 @@
 
 
         <div class="Total_Post">
-        <div class="post_title">Miscellaneous 1</div>        
-        <div class="date_container">
-        <div class="date_text">Uploaded on 2/8/2021 -- (10:54 PM)</div>
-        <div class="post_id">282/21</div></div>
+        <div class="post_title">Miscellaneous 1<div class="post_id">282/21</div></div>        
+        <div class="date_container"><div class="date_text">Uploaded on 2/8/2021 -- (10:54 PM)</div></div>
         <div class="post">
             I'm learning more CSS text properties and selectors. Today is a school day but I don't have to do anything
             really; most of what is done in class is honestly useless. The only class that is really worth listening to 
@@ -383,10 +362,8 @@
       
 
         <div class="Total_Post">
-        <div class="post_title">Functionality</div>        
-        <div class="date_container">
-        <div class="date_text">Uploaded on 2/6/2021 -- (5:43 PM)</div>
-        <div class="post_id">262/21A</div></div>
+        <div class="post_title">Functionality<div class="post_id">262/21A</div></div>        
+        <div class="date_container"><div class="date_text">Uploaded on 2/6/2021 -- (5:43 PM)</div></div>
         <div class="post">
             As for functionality, I really don't think that there are any plans. I want to add cool buttons,
             better asthetic, and... just whatever really. Again, I'm a beginner to this so it will take me a while
@@ -396,10 +373,8 @@
 
 
         <div class="Total_Post">
-        <div class="post_title">Very First Post</div>        
-        <div class="date_container">
-        <div class="date_text">Uploaded on 2/6/2021 -- (5:11 PM)</div>
-        <div class="post_id">262/21</div></div>
+        <div class="post_title">Very First Post<div class="post_id">262/21</div></div>        
+        <div class="date_container"><div class="date_text">Uploaded on 2/6/2021 -- (5:11 PM)</div>
         <div class="post">
             This is just the very basic outline for a website project. <br>
             I plan on updating this site frequently... err whenever I can. <br><br>

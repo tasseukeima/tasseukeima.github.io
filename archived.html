@@ -9,7 +9,7 @@
                    margin: 0px;
             }
             
-             h1 {font-family: Sans-Serif;
+             h1 {font: normal x-small verdana, arial, helvetica, sans-serif;
                  font-size: 30px; 
                  background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(50, 50, 50)); 
                  color: rgb(255, 255, 255); 
@@ -23,7 +23,7 @@
                  margin-bottom: 150px;
             }
 
-            h3 {font-family: sans-serif;
+            h3 {font: normal x-small verdana, arial, helvetica, sans-serif;
                 margin-top: 50px;
                 float: 10px;
                 width: auto;
@@ -34,37 +34,37 @@
                 margin-bottom: 25px;
             }
 
-            .post_title {font-family: Arial, Helvetica, sans-serif; 
+            .post_title {font: normal x-small verdana, arial, helvetica, sans-serif;
+                         color: rgb(255, 255, 255);
                          font-size: 40px; 
-                         margin-left: 10px;
-                         margin-right: 10px;
-                         margin-bottom: 10px;
+                         font-weight: lighter;
+                         margin-bottom: 0px;
+                         background-color: rgb(0, 0, 0);
+                         padding: 12px;
+                         padding-bottom: 0px;
+                         border-radius: 3px 3px 0px 0px;
             }
             
             .date_container {background-color: rgb(0, 0, 0); 
                              color: rgb(255, 255, 255); 
                              padding:12px;
+                             padding-bottom: 0px;
                              margin-bottom: 0px;
-                             margin-top: 10px;
-                             border-radius: 6px 6px 0px 0px;
+                             margin-top: 0px;
+                             border-radius: 0px 0px 0px 0px;
                              height: 25px;
                              vertical-align: middle;
                              object-position: center;
             }
 
-
-            .date_container:hover {background-color: rgb(25, 25, 25);
-
-            }
-
             .date_text {font-family: monospace;
-                        font-color: rgb(255. 255. 255); 
-                        font-size: 18px;
+                        color: rgb(200, 200, 200); 
+                        font-size: 14px;
                         height: auto;
                         width: auto;
                         padding: 1px;
                         float: left;
-                        vertical-align: middle;
+                        vertical-align: bottom;
                         display: inline;
             }
 
@@ -84,20 +84,18 @@
               
             }
             
-            .post {background-color: rgb(233, 235, 244); 
-                   font size: 20; 
-                   padding: 8px;
+            .post {background-color: rgb(233, 235, 244);
+                   font size: 30px; 
+                   font: normal x-small verdana, arial, helvetica, sans-serif;
+                   padding: 12px;
                    margin-top: 0px;
                    border-style: solid;
                    border-width: 1px; 
-                   border-left-color: rgb(0, 0, 0);
-                   border-right-color: rgb(0, 0, 0);
-                   border-bottom-color: rgb(0, 0, 0);
-                   border-radius: 0px 0px 6px 6px;
+                   border-left-color: rgb(230, 230, 230);
+                   border-right-color: rgb(230, 230, 230);
             }
 
             .post:hover {background-color: rgb(240, 242, 250);
-
             }
 
             .lower_title {margin: 0px auto; 
@@ -217,8 +215,7 @@
                font-color: rgb(255, 255, 255);
 
             }
-           
-
+  
         </style>
     </head>
     <body>
@@ -228,15 +225,13 @@
                     <span id="tass_board">
                         Archived
                     </span>
+                      <h2 class="lower_title">
+                        <a href="index.html" id="Home">Home</a>
+                        <a href="board.html" id="Main_Board">Main Board</a>
+                        <a href="archived.html" id="Archived">Archived</a>
+                      </h2>
                 </h1>
             </div>
-            
-            
-        <h2 class="lower_title">
-            <a href="index.html" id="Home">Home</a>
-            <a href="board.html" id="Main_Board">Main Board</a>
-            <a href="archived.html" id="Archived">Archived</a>
-        </h2>
         
         
         <h3>
@@ -245,10 +240,37 @@
 
 
         <div class="Total_Post">
-        <div class="post_title">Public Branch</div>        
-        <div class="date_container">
-        <div class="date_text">Updated on 2/27/2021 -- (10:36 PM)</div>
-        <div class="post_id">Public #329048908</div></div>
+        <div class="post_title">Experimental Branch<div class="post_id">Experimental #018274829</div></div>        
+        <div class="date_container"><div class="date_text">Updated on 2/27/2021 -- (10:36 PM)</div></div>
+        <div class="post">
+            The Experimental Branch is the 1st stage of content development.<br>
+            Features that may possibly be implemented in future updates are added here.<br>
+            It may take years for all the features in this Branch to be implemented. 
+            This branch is also utilized for bug fixes.<br>
+            (Note: Only "miscellaneous.html" is avaliable for experimental access.) 
+        </div>
+        <div class="View_Button"><a href="miscellaneous.html">View</a></div>
+        </div>
+
+
+
+        <div class="Total_Post">
+        <div class="post_title">Internal Branch<div class="post_id">Internal #278491037</div></div>
+        <div class="date_container"><div class="date_text">Updated on 2/27/2021 -- (10:36 PM)</div></div>
+        <div class="post">
+            The Internal Branch is the 2nd stage of development.<br>
+            Features taken and properly tested from the Experimental Branch are added here.<br>
+            This branch is only used to store new content prior to an update.<br>
+            (Note: The Internal Branch is locked from public access.)
+        </div>
+        <div class="View_Button"><a>View</a></div>
+        </div>
+
+
+
+        <div class="Total_Post">
+        <div class="post_title">Public Branch<div class="post_id">Public #329048908</div></div> 
+        <div class="date_container"><div class="date_text">Updated on 2/27/2021 -- (10:36 PM)</div></div>
         <div class="post">
             The Public Branch is where all content and bug fix updates are located.<br>
             (The Public Branch is open to public access.)<br><br>
@@ -259,37 +281,5 @@
         </div>
 
 
-
-        <div class="Total_Post">
-        <div class="post_title">Internal Branch</div>        
-        <div class="date_container">
-        <div class="date_text">Updated on 2/27/2021 -- (10:36 PM)</div>
-        <div class="post_id">Internal #278491037</div></div>
-        <div class="post">
-            The Internal Branch is the 2nd stage of development.<br>
-            Features taken and properly tested from the Experimental Branch are added here.<br>
-            This branch is only used to store new content prior to an update.<br>
-            (Note: The Internal Branch is locked from public access.)
-        </div>
-        <div class="View_Button"><a>View</a></div>
-        </div>
-        
-
-
-        <div class="Total_Post">
-        <div class="post_title">Experimental Branch</div>        
-        <div class="date_container">
-        <div class="date_text">Updated on 2/27/2021 -- (10:36 PM)</div>
-        <div class="post_id">Experimental #018274829</div></div>
-        <div class="post">
-            The Experimental Branch is the 1st stage of content development.<br>
-            Features that may possibly be implemented in future updates are added here.<br>
-            It may take years for all the features in this Branch to be implemented. 
-            This branch is also utilized for bug fixes.<br>
-            (Note: Only "miscellaneous.html" is avaliable for experimental access.) 
-        </div>
-        <div class="View_Button"><a href="miscellaneous.html">View</a></div>
-        </div>
-        
     </body>
 </html>

@@ -9,7 +9,7 @@
                    margin: 0px;
             }
             
-             h1 {font-family: Sans-Serif;
+             h1 {font: normal x-small verdana, arial, helvetica, sans-serif;
                  font-size: 30px; 
                  background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(50, 50, 50)); 
                  color: rgb(255, 255, 255); 
@@ -23,7 +23,7 @@
                  margin-bottom: 150px;
             }
 
-            h3 {font-family: sans-serif;
+            h3 {font: normal x-small verdana, arial, helvetica, sans-serif;
                 margin-top: 50px;
                 float: 10px;
                 width: auto;
@@ -34,37 +34,37 @@
                 margin-bottom: 25px;
             }
 
-            .post_title {font-family: Arial, Helvetica, sans-serif; 
+            .post_title {font: normal x-small verdana, arial, helvetica, sans-serif;
+                         color: rgb(255, 255, 255);
                          font-size: 40px; 
-                         margin-left: 10px;
-                         margin-right: 10px;
-                         margin-bottom: 10px;
+                         font-weight: lighter;
+                         margin-bottom: 0px;
+                         background-color: rgb(0, 0, 0);
+                         padding: 12px;
+                         padding-bottom: 0px;
+                         border-radius: 3px 3px 0px 0px;
             }
             
             .date_container {background-color: rgb(0, 0, 0); 
                              color: rgb(255, 255, 255); 
                              padding:12px;
+                             padding-bottom: 0px;
                              margin-bottom: 0px;
-                             margin-top: 10px;
-                             border-radius: 6px 6px 0px 0px;
+                             margin-top: 0px;
+                             border-radius: 0px 0px 0px 0px;
                              height: 25px;
                              vertical-align: middle;
                              object-position: center;
             }
 
-
-            .date_container:hover {background-color: rgb(25, 25, 25);
-
-            }
-
             .date_text {font-family: monospace;
-                        font-color: rgb(255. 255. 255); 
-                        font-size: 18px;
+                        color: rgb(200, 200, 200); 
+                        font-size: 14px;
                         height: auto;
                         width: auto;
                         padding: 1px;
                         float: left;
-                        vertical-align: middle;
+                        vertical-align: bottom;
                         display: inline;
             }
 
@@ -84,20 +84,18 @@
               
             }
             
-            .post {background-color: rgb(233, 235, 244); 
-                   font size: 20; 
-                   padding: 8px;
+            .post {background-color: rgb(233, 235, 244);
+                   font size: 30px; 
+                   font: normal x-small verdana, arial, helvetica, sans-serif;
+                   padding: 12px;
                    margin-top: 0px;
                    border-style: solid;
                    border-width: 1px; 
-                   border-left-color: rgb(0, 0, 0);
-                   border-right-color: rgb(0, 0, 0);
-                   border-bottom-color: rgb(0, 0, 0);
-                   border-radius: 0px 0px 6px 6px;
+                   border-left-color: rgb(230, 230, 230);
+                   border-right-color: rgb(230, 230, 230);
             }
 
             .post:hover {background-color: rgb(240, 242, 250);
-
             }
 
             .lower_title {margin: 0px auto; 
@@ -217,7 +215,7 @@
                font-color: rgb(255, 255, 255);
 
             }
-
+  
         </style>
     </head>
     <body>
@@ -227,22 +225,21 @@
                     <span id="tass_board">
                         Home
                     </span>
+                      <h2 class="lower_title">
+                        <a href="index.html" id="Home">Home</a>
+                        <a href="board.html" id="Main_Board">Main Board</a>
+                        <a href="archived.html" id="Archived">Archived</a>
+                      </h2>
                 </h1>
             </div>
             
             
-        <h2 class="lower_title">
-            <a href="index.html" id="Home">Home</a>
-            <a href="board.html" id="Main_Board">Main Board</a>
-            <a href="archived.html" id="Archived">Archived</a>
-        </h2>
+        
         
         
         <div class="Total_Post">
-        <div class="post_title">Update 1.2 Alpha</div>        
-        <div class="date_container">
-        <div class="date_text">Updated on 3/1/2021 -- (10:12 AM)</div>
-        <div class="post_id">312/21X</div></div>
+        <div class="post_title">Alpha Stage<div class="post_id">312/21X</div></div>        
+        <div class="date_container"><div class="date_text">Updated on 3/1/2021 -- (10:12 AM)</div></div>
         <div class="post">
             A new redesign gives the website a fresh new look. <br><br>
             Along with the redesign, a smaller header provides a better asthetic overall.<br><br>
@@ -274,7 +271,7 @@
               <li>Rework of the Post Title / Post ID System</li>
               <li>Reformat of the button "a" at the bottom of posts</li>
               <li>Minor font changes</li>
-              <li>Coloration Chnages</li>
+              <li>Coloration Changes</li>
               <li>Removal of "Miscellaneous" tab / reused for "Experimental" Branch</li>
             </ul>
 
