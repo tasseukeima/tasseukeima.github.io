@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>tasseukeima</title>
+  <head>
+    <meta charset="utf-8">
+      <title>tasseukeima</title>
         <style>
             
-             body {background-color: rgb(209, 221, 232); 
+            ::-moz-selection {color: white;
+                         background-color: rgb(52, 128, 72);
+            }
+
+             body {background-color: rgb(23, 36, 66); 
                    margin: 0px;
             }
             
-             h1 {font: normal x-small verdana, arial, helvetica, sans-serif;
+            h1 {font: normal x-small verdana, arial, helvetica, sans-serif;
                  font-size: 30px; 
                  background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(50, 50, 50)); 
                  color: rgb(255, 255, 255); 
@@ -18,7 +22,7 @@
                  cursor: default;
             }
             
-             h2 {background-color: rgb(10, 10, 10);
+            h2 {background-color: rgb(0, 0, 0);
                  margin-top: 0px;
                  margin-bottom: 150px;
             }
@@ -28,7 +32,7 @@
                 margin-top: 50px;
                 float: 10px;
                 width: auto;
-                color: rgb(0, 0, 0);
+                color: rgb(255, 255, 255);
                 text-decoration: none;
                 text-align: center;
                 padding-top: 40px;
@@ -40,27 +44,38 @@
                          font-size: 40px; 
                          font-weight: lighter;
                          margin-bottom: 0px;
-                         background-color: rgb(0, 0, 0);
+                         background-color: rgb(23, 36, 66);
                          padding: 12px;
                          padding-bottom: 0px;
                          border-radius: 3px 3px 0px 0px;
+                         border-width: 1px;
+                         border-color: rgb(45, 64, 107);
+                         border-style: solid;
+                         border-bottom-color: rgb(23, 36, 66);
             }
             
-            .date_container {background-color: rgb(0, 0, 0); 
+            .date_container {background-color: rgb(23, 36, 66); 
                              color: rgb(255, 255, 255); 
-                             padding:12px;
+                             padding: 12px;
                              padding-bottom: 0px;
                              margin-bottom: 0px;
                              margin-top: 0px;
                              border-radius: 0px 0px 0px 0px;
+                             border-style: solid;
                              height: 25px;
                              vertical-align: middle;
                              object-position: center;
+                             border-width: 1px;
+                             border-left-color: rgb(45, 64, 107);
+                             border-right-color: rgb(45, 64, 107);
+                             border-top-color: rgb(23, 36, 66);
+                             border-bottom-color: rgb(23, 36, 66);                            
             }
 
-            .date_text {font-family: monospace;
-                        color: rgb(200, 200, 200); 
-                        font-size: 14px;
+            .date_text {font: normal x-small verdana, arial, helvetica, sans-serif;
+                        font-weight: bold;
+                        color: rgb(255, 255, 255); 
+                        font-size: 12px;
                         height: auto;
                         width: auto;
                         padding: 1px;
@@ -69,23 +84,35 @@
                         display: inline;
             }
 
-            .post_id {font-family: monospace;
-                      font-size: 15px;
-                      background-color: rgb(58, 143, 248);
+            .Post_Header {padding: 0px auto;
+                          margin: 0px;
+            }
+
+            .Post_Header:hover {background-color: rgb(45, 64, 107);
+            }
+
+            .post_id {font: normal x-small verdana, arial, helvetica, sans-serif;
+                      font-size: 12px;
+                      background-color: rgb(23, 36, 66);
                       font-color: rgb(0, 0, 0);
-                      padding: 4px;
+                      padding: 6px;
                       border-radius: 15px 15px 15px 15px;
                       width: auto; 
                       float: right;
                       vertical-align: middle;
                       display: inline;
+                      border-width: 1px;
+                      border-color: rgb(45, 64, 107);
+                      border-style: solid;
+                      transition: 0.1s;
             }
 
-            .post_id:hover {background-color: rgb(67, 134, 230);
-              
+            .post_id:hover {background-color: rgb(45, 64, 107);
+                            border-color: rgb(23, 36, 66);
             }
             
-            .post {background-color: rgb(233, 235, 244);
+            .post {background-color: rgb(23, 36, 66);
+                   color: rgb(255, 255, 255);
                    font-size: 60px; 
                    font: normal small verdana, arial, helvetica, sans-serif;
                    font-weight: bold;
@@ -93,13 +120,14 @@
                    margin-top: 0px;
                    border-style: solid;
                    border-width: 1px; 
-                   border-left-color: rgb(230, 230, 230);
-                   border-right-color: rgb(230, 230, 230);
-                   border-bottom-color: rgb(230, 230, 230);
+                   border-left-color: rgb(45, 64, 107);
+                   border-right-color: rgb(45, 64, 107);
+                   border-top-color: rgb(23, 36, 66);
+                   border-bottom-color: rgb(45, 64, 107);
+                   transition: 0.25s; 
             }
 
-            .post:hover {background-color: rgb(240, 242, 250);
-            
+            .post:hover {background-color: rgb(45, 64, 107);
             }
 
             .Total_Post {margin-left: 175px;
@@ -107,11 +135,15 @@
                          margin-bottom: 75px;
                          margin-top: 75px;
                          cursor: default;
+                         border-width: 2px;
+                         border-style: solid;
+                         border-color: rgb(23, 36, 66);
             }
 
-            .Total_Post:click {border-color: rgb(75, 191, 253);
-                               border-width: 3px;
-
+            .Total_Post:hover {border-color: rgb(75, 191, 253);
+                               border-width: 2px;
+                               background-color: rgb(45, 64, 107);
+                               border-radius: 5px 5px 5px 5px;
             }
 
             .lower_title {margin: 0px auto; 
@@ -122,8 +154,7 @@
                           font-family: sans-serif;
                           font-size: 14px;
                           margin-top: 0px;
-                          font-weight: normal;
-                          
+                          font-weight: normal;             
             }
             
             .main_containter {margin: 0px auto; 
@@ -158,7 +189,6 @@
             }
 
             #Home:hover {background-color: rgb(100, 100, 100);
-
             }
             
             #Main_Board {margin-right: 12px;
@@ -170,11 +200,9 @@
                          border-radius: 20px 20px 20px 20px;
                          font-family: sans-serif;
                          font-style: thin;
-
             }
             
             #Main_Board:hover {background-color: rgb(100, 100, 100);
-
             }
 
             #Archived {margin-right: 12px;
@@ -189,7 +217,6 @@
             }
 
             #Archived:hover {background-color: rgb(100, 100, 100);
-
             }
 
             #Index {margin-right: 12px;
@@ -204,40 +231,40 @@
             }
 
             #Index:hover {background-color: rgb(100, 100, 100);
-
             }
 
             .View_Button {height: 20px;
-                          font-size: 16px;
-                          font-family: Arial, Helvetica, sans-serif;
+                          font-size: 50px;
+                          font: normal small verdana, arial, helvetica, sans-serif;
                           font-color: rgb(255, 255, 255);
                           font-weight: bold;
-                          background-color: rgb(13, 167, 214);
+                          background-color: rgb(23, 36, 66);
                           color: rgb(255, 255, 255);
                           padding: 10px;
-                          border-radius: 10px 10px 10px 10px;
                           cursor: default;
                           text-align: middle;
                           text-align: center;
                           padding-left: 10px;
                           padding-right: 10px;
-                          border-radius: 0px 0px 6px 6px;
+                          border-radius: 0px 0px 3px 3px;
                           text-decoration: none;
                           cursor: pointer;
-                        
+                          border-width: 1px;
+                          border-style: solid;
+                          border-color: rgb(45, 64, 107);
+                          transition: 0.25s;                      
             }
 
             .View_Button:hover {background-color: rgb(7, 179, 232);
-
+                                font-weight: bolder;
+                                border-color: rgb(7, 179, 232);
             }
 
             a {text-decoration: none;
                font-color: rgb(255, 255, 255);
-
             }
 
-            a:hover {cursor: pointer;
-            
+            a:hover {cursor: pointer;            
             }
 
             .Small_Button {background-color: rgb(13, 167, 214);
@@ -246,14 +273,12 @@
                            text-align: center;
                            border-radius: 5px 5px 5px 5px;
                            font-size: 15px;
-
             }
 
             .Small_Button:hover {background-color: rgb(7, 179, 232);
                                  cursor: pointer;
-
             }
-  
+        
         </style>
     </head>
     <body>
