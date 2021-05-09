@@ -2,285 +2,319 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>tasseukeima</title>
+      <title>Tasseukeima</title>
         <style>
             
             ::-moz-selection {color: white;
                          background-color: rgb(52, 128, 72);
             }
 
-             body {background-color: rgb(23, 36, 66); 
-                   margin: 0px;
+            body {
+              background-color: rgb(23, 36, 66); 
+              margin: 0px;
             }
             
-            h1 {font: normal x-small verdana, arial, helvetica, sans-serif;
-                 font-size: 30px; 
-                 background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(50, 50, 50)); 
-                 color: rgb(255, 255, 255); 
-                 padding: 6px;
-                 margin-bottom: 0px;
-                 cursor: default;
+            h1 {
+              font: normal x-small verdana, arial, helvetica, sans-serif;
+              font-size: 30px; 
+              background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(50, 50, 50)); 
+              color: rgb(255, 255, 255); 
+              padding: 6px;
+              margin-bottom: 0px;
+              cursor: default;
             }
             
-            h2 {background-color: rgb(0, 0, 0);
-                 margin-top: 0px;
-                 margin-bottom: 150px;
+            h2 {
+              background-color: rgb(0, 0, 0);
+              margin-top: 0px;
+              margin-bottom: 150px;
             }
 
-            h3 {font: normal x-small verdana, arial, helvetica, sans-serif;
-                font-size: 15px;
-                margin-top: 50px;
-                float: 10px;
-                width: auto;
-                color: rgb(255, 255, 255);
-                text-decoration: none;
-                text-align: center;
-                padding-top: 40px;
-                margin-bottom: 25px;
+            h3 {
+              font: normal x-small verdana, arial, helvetica, sans-serif;
+              font-size: 15px;
+              margin-top: 50px;
+              float: 10px;
+              width: auto;
+              color: rgb(255, 255, 255);
+              text-decoration: none;
+              text-align: center;
+              padding-top: 40px;
+              margin-bottom: 25px;
             }
 
-            .post_title {font: normal x-small verdana, arial, helvetica, sans-serif;
-                         color: rgb(255, 255, 255);
-                         font-size: 40px; 
-                         font-weight: lighter;
-                         margin-bottom: 0px;
-                         background-color: rgb(23, 36, 66);
-                         padding: 12px;
-                         padding-bottom: 0px;
-                         border-radius: 3px 3px 0px 0px;
-                         border-width: 1px;
-                         border-color: rgb(64, 89, 148);
-                         border-style: solid;
-                         border-bottom-color: rgb(23, 36, 66);
+            .post_title {
+              font: normal x-small verdana, arial, helvetica, sans-serif;
+              color: rgb(255, 255, 255);
+              font-size: 40px; 
+              font-weight: lighter;
+              margin-bottom: 0px;
+              background-color: rgb(23, 36, 66);
+              padding: 12px;
+              padding-bottom: 0px;
+              border-radius: 3px 3px 0px 0px;
+              border-width: 1px;
+              border-color: rgb(64, 89, 148);
+              border-style: solid;
+              border-bottom-color: rgb(23, 36, 66);
             }
             
-            .date_container {background-color: rgb(23, 36, 66); 
-                             color: rgb(255, 255, 255); 
-                             padding: 12px;
-                             padding-bottom: 0px;
-                             margin-bottom: 0px;
-                             margin-top: 0px;
-                             border-radius: 0px 0px 0px 0px;
-                             border-style: solid;
-                             height: 25px;
-                             vertical-align: middle;
-                             object-position: center;
-                             border-width: 1px;
-                             border-left-color: rgb(64, 89, 148);
-                             border-right-color: rgb(64, 89, 148);
-                             border-top-color: rgb(23, 36, 66);
-                             border-bottom-color: rgb(23, 36, 66);                            
+            .date_container {
+              background-color: rgb(23, 36, 66); 
+              color: rgb(255, 255, 255); 
+              padding: 12px;
+              padding-bottom: 0px;
+              margin-bottom: 0px;
+              margin-top: 0px;
+              border-radius: 0px 0px 0px 0px;
+              border-style: solid;
+              height: 25px;
+              vertical-align: middle;
+              object-position: center;
+              border-width: 1px;
+              border-left-color: rgb(64, 89, 148);
+              border-right-color: rgb(64, 89, 148);
+              border-top-color: rgb(23, 36, 66);
+              border-bottom-color: rgb(23, 36, 66);                            
             }
 
-            .date_text {font: normal x-small verdana, arial, helvetica, sans-serif;
-                        font-weight: bold;
-                        color: rgb(255, 255, 255); 
-                        font-size: 12px;
-                        height: auto;
-                        width: auto;
-                        padding: 1px;
-                        float: left;
-                        vertical-align: bottom;
-                        display: inline;
+            .date_text {
+              font: normal x-small verdana, arial, helvetica, sans-serif;
+              font-weight: bold;
+              color: rgb(255, 255, 255); 
+              font-size: 12px;
+              height: auto;
+              width: auto;
+              padding: 1px;
+              float: left;
+              vertical-align: bottom;
+              display: inline;
             }
 
-            .Post_Header {padding: 0px auto;
-                          margin: 0px;
+            .Post_Header {
+              padding: 0px auto;
+              margin: 0px;
             }
 
-            .Post_Header:hover {background-color: rgb(64, 89, 148);
+            .Post_Header:hover {
+              background-color: rgb(64, 89, 148);
             }
 
-            .post_id {font: normal x-small verdana, arial, helvetica, sans-serif;
-                      font-size: 12px;
-                      background-color: rgb(23, 36, 66);
-                      font-color: rgb(0, 0, 0);
-                      padding: 6px;
-                      border-radius: 15px 15px 15px 15px;
-                      width: auto; 
-                      float: right;
-                      vertical-align: middle;
-                      display: inline;
-                      border-width: 1px;
-                      border-color: rgb(64, 89, 148);
-                      border-style: solid;
-                      transition: 0.1s;
+            .post_id {
+              font: normal x-small verdana, arial, helvetica, sans-serif;
+              font-size: 12px;
+              background-color: rgb(23, 36, 66);
+              font-color: rgb(0, 0, 0);
+              padding: 6px;
+              border-radius: 15px 15px 15px 15px;
+              width: auto; 
+              float: right;
+              vertical-align: middle;
+              display: inline;
+              border-width: 1px;
+              border-color: rgb(64, 89, 148);
+              border-style: solid;
+              transition: 0.1s;
             }
 
-            .post_id:hover {background-color: rgb(64, 89, 148);
-                            border-color: rgb(23, 36, 66);
+            .post_id:hover {
+              background-color: rgb(64, 89, 148);
+              border-color: rgb(23, 36, 66);
             }
             
-            .post {background-color: rgb(23, 36, 66);
-                   color: rgb(255, 255, 255);
-                   font-size: 60px; 
-                   font: normal small verdana, arial, helvetica, sans-serif;
-                   font-weight: bold;
-                   padding: 12px;
-                   margin-top: 0px;
-                   border-style: solid;
-                   border-width: 1px; 
-                   border-left-color: rgb(64, 89, 148);
-                   border-right-color: rgb(64, 89, 148);
-                   border-top-color: rgb(23, 36, 66);
-                   border-bottom-color: rgb(64, 89, 148);
-                   transition: 0.25s; 
+            .post {
+              background-color: rgb(23, 36, 66);
+              color: rgb(255, 255, 255);
+              font-size: 60px; 
+              font: normal small verdana, arial, helvetica, sans-serif;
+              font-weight: bold;
+              padding: 12px;
+              margin-top: 0px;
+              border-style: solid;
+              border-width: 1px; 
+              border-left-color: rgb(64, 89, 148);
+              border-right-color: rgb(64, 89, 148);
+              border-top-color: rgb(23, 36, 66);
+              border-bottom-color: rgb(64, 89, 148);
+              transition: 0.25s; 
             }
 
-            .post:hover {background-color: rgb(38, 55, 94);
-                         border-bottom-color: rgb(38, 55, 94);
+            .post:hover {
+              background-color: rgb(38, 55, 94);
+              border-bottom-color: rgb(38, 55, 94);
             }
 
-            .Total_Post {margin-left: 175px;
-                         margin-right: 175px;
-                         margin-bottom: 75px;
-                         margin-top: 75px;
-                         cursor: default;
-                         border-width: 2px;
-                         border-style: solid;
-                         border-color: rgb(23, 36, 66);
+            .Total_Post {
+              margin-left: 175px;
+              margin-right: 175px;
+              margin-bottom: 75px;
+              margin-top: 75px;
+              cursor: default;
+              border-width: 2px;
+              border-style: solid;
+              border-color: rgb(23, 36, 66);
             }
 
-            .Total_Post:hover {border-color: rgb(75, 191, 253);
-                               border-width: 2px;
-                               background-color: rgb(64, 89, 148);
-                               border-radius: 5px 5px 5px 5px;
+            .Total_Post:hover {
+              border-color: rgb(75, 191, 253);
+              border-width: 2px;
+              background-color: rgb(64, 89, 148);
+              border-radius: 5px 5px 5px 5px;
             }
 
-            .lower_title {margin: 0px auto; 
-                          text-align: center;  
-                          padding-bottom: 8px; 
-                          padding-top: 8px;
-                          text-decoration: none;
-                          font-family: sans-serif;
-                          font-size: 14px;
-                          margin-top: 0px;
-                          font-weight: normal;             
+            .lower_title {
+              margin: 0px auto; 
+              text-align: center;  
+              padding-bottom: 8px; 
+              padding-top: 8px;
+              text-decoration: none;
+              font-family: sans-serif;
+              font-size: 14px;
+              margin-top: 0px;
+              font-weight: normal;             
             }
             
-            .main_containter {margin: 0px auto; 
-                              width: auto;
-                              text-align: center
-                              margin-bottom: 0px; 
+            .main_containter {
+              margin: 0px auto; 
+              width: auto;
+              text-align: center
+              margin-bottom: 0px; 
             }
             
-            .upper_title {margin: 0px auto; 
-                          text-align: center;
-                          width: auto;
+            .upper_title {
+              margin: 0px auto; 
+              text-align: center;
+              width: auto;
             }    
                 
-            #tass_board {text-align: center;
-                         width: auto;
+            #tass_board {
+              text-align: center;
+              width: auto;
             }
             
-            h6 {text-align: center;
-                margin-top: 20px;
-                margin-left: auto;
-                margin-right: auto;
+            h6 {
+              text-align: center;
+              margin-top: 20px;
+              margin-left: auto;
+              margin-right: auto;
             }
             
-            #Home {margin-right: 12px;
-                   background-color: rgb(0, 0, 0);
-                   padding: 7px;
-                   color: rgb(255, 255, 255);
-                   text-decoration: none;
-                   border-radius: 20px 20px 20px 20px;
-                   font-family: sans-serif;
-                   font-style: thin;
+            #Home {
+              margin-right: 12px;
+              background-color: rgb(0, 0, 0);
+              padding: 7px;
+              color: rgb(255, 255, 255);
+              text-decoration: none;
+              border-radius: 20px 20px 20px 20px;
+              font-family: sans-serif;
+              font-style: thin;
             }
 
-            #Home:hover {background-color: rgb(100, 100, 100);
+            #Home:hover {
+              background-color: rgb(100, 100, 100);
             }
             
-            #Main_Board {margin-right: 12px;
-                         margin-left:12px;
-                         background-color: rgb(0, 0, 0);
-                         padding: 7px;
-                         color: rgb(255, 255, 255);
-                         text-decoration:none;
-                         border-radius: 20px 20px 20px 20px;
-                         font-family: sans-serif;
-                         font-style: thin;
+            #Main_Board {
+              margin-right: 12px;
+              margin-left:12px;
+              background-color: rgb(0, 0, 0);
+              padding: 7px;
+              color: rgb(255, 255, 255);
+              text-decoration:none;
+              border-radius: 20px 20px 20px 20px;
+              font-family: sans-serif;
+              font-style: thin;
             }
             
-            #Main_Board:hover {background-color: rgb(100, 100, 100);
+            #Main_Board:hover {
+              background-color: rgb(100, 100, 100);
             }
 
-            #Archived {margin-right: 12px;
-                       margin-left:12px;
-                       background-color: rgb(0, 0, 0);
-                       padding: 7px;
-                       color: rgb(255, 255, 255);
-                       text-decoration:none;
-                       border-radius: 20px 20px 20px 20px;
-                       font-family: sans-serif;
-                       font-style: thin;
+            #Archived {
+              margin-right: 12px;
+              margin-left:12px;
+              background-color: rgb(0, 0, 0);
+              padding: 7px;
+              color: rgb(255, 255, 255);
+              text-decoration:none;
+              border-radius: 20px 20px 20px 20px;
+              font-family: sans-serif;
+              font-style: thin;
             }
 
-            #Archived:hover {background-color: rgb(100, 100, 100);
+            #Archived:hover {
+              background-color: rgb(100, 100, 100);
             }
 
-            #Index {margin-right: 12px;
-                    margin-left:12px;
-                    background-color: rgb(0, 0, 0);
-                    padding: 7px;
-                    color: rgb(255, 255, 255);
-                    text-decoration:none;
-                    border-radius: 20px 20px 20px 20px;
-                    font-family: sans-serif;
-                    font-style: thin;
+            #Index {
+              margin-right: 12px;
+              margin-left:12px;
+              background-color: rgb(0, 0, 0);
+              padding: 7px;
+              color: rgb(255, 255, 255);
+              text-decoration:none;
+              border-radius: 20px 20px 20px 20px;
+              font-family: sans-serif;
+              font-style: thin;
             }
 
-            #Index:hover {background-color: rgb(100, 100, 100);
+            #Index:hover {
+              background-color: rgb(100, 100, 100);
             }
 
-            .View_Button {height: 20px;
-                          font-size: 50px;
-                          font: normal small verdana, arial, helvetica, sans-serif;
-                          font-color: rgb(255, 255, 255);
-                          font-weight: bold;
-                          background-color: rgb(23, 36, 66);
-                          color: rgb(255, 255, 255);
-                          padding: 10px;
-                          cursor: default;
-                          text-align: middle;
-                          text-align: center;
-                          padding-left: 10px;
-                          padding-right: 10px;
-                          border-radius: 0px 0px 3px 3px;
-                          text-decoration: none;
-                          cursor: pointer;
-                          border-width: 1px;
-                          border-style: solid;
-                          border-top-color: rgb(23, 36, 66);
-                          border-bottom-color: rgb(64, 89, 148);
-                          border-left-color: rgb(64, 89, 148);
-                          border-right-color: rgb(64, 89, 148);
-                          transition: 0.25s;                      
+            .View_Button {
+              height: 20px;
+              font-size: 50px;
+              font: normal small verdana, arial, helvetica, sans-serif;
+              font-color: rgb(255, 255, 255);
+              font-weight: bold;
+              background-color: rgb(23, 36, 66);
+              color: rgb(255, 255, 255);
+              padding: 10px;
+              cursor: default;
+              text-align: middle;
+              text-align: center;
+              padding-left: 10px;
+              padding-right: 10px;
+              border-radius: 0px 0px 3px 3px;
+              text-decoration: none;
+              cursor: pointer;
+              border-width: 1px;
+              border-style: solid;
+              border-top-color: rgb(23, 36, 66);
+              border-bottom-color: rgb(64, 89, 148);
+              border-left-color: rgb(64, 89, 148);
+              border-right-color: rgb(64, 89, 148);
+              transition: 0.25s;                      
             }
 
-            .View_Button:hover {background-color: rgb(7, 179, 232);
-                                font-weight: bolder;
-                                border-color: rgb(7, 179, 232);
+            .View_Button:hover {
+              background-color: rgb(7, 179, 232);
+              font-weight: bolder;
+              border-color: rgb(7, 179, 232);
             }
 
-            a {text-decoration: none;
-               font-color: rgb(255, 255, 255);
+            a {
+              text-decoration: none;
+              font-color: rgb(255, 255, 255);
             }
 
-            a:hover {cursor: pointer;            
+            a:hover {
+              cursor: pointer;            
             }
 
-            .Small_Button {background-color: rgb(13, 167, 214);
-                           padding: 10px;
-                           color: rgb(255, 255, 255);
-                           text-align: center;
-                           border-radius: 5px 5px 5px 5px;
-                           font-size: 15px;
+            .Small_Button {
+              background-color: rgb(13, 167, 214);
+              padding: 10px;
+              color: rgb(255, 255, 255);
+              text-align: center;
+              border-radius: 5px 5px 5px 5px;
+              font-size: 15px;
             }
 
-            .Small_Button:hover {background-color: rgb(7, 179, 232);
-                                 cursor: pointer;
+            .Small_Button:hover {
+              background-color: rgb(7, 179, 232);
+              cursor: pointer;
             }
         
         </style>
