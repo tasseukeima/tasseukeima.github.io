@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-      <title>tasseukeima</title>
-        <style>
-            
-            ::-moz-selection {color: white;
+::-moz-selection {color: white;
                          background-color: rgb(52, 128, 72);
             }
 
@@ -160,7 +153,7 @@
             
             .main_containter {margin: 0px auto; 
                               width: auto;
-                              text-align: center
+                              text-align: center;
                               margin-bottom: 0px; 
             }
             
@@ -282,39 +275,3 @@
             .Small_Button:hover {background-color: rgb(7, 179, 232);
                                  cursor: pointer;
             }
-        
-        </style>
-  </head>
-    <body>
-            
-            <div class="main_containter">
-                <h1 class="upper_title">
-                    <span id="tass_board">
-                        Experimental
-                    </span>
-                      <h2 class="lower_title">
-                        <a href="home.html" id="Home">Home</a>
-                        <a href="main_board.html" id="Main_Board">Main Board</a>
-                        <a href="archived.html" id="Archived">Archived</a>
-                        <a href="index.html" id="Index">Index</a>
-                      </h2>
-                </h1>
-            </div>
-          
-        <h3>This is an experimental state. The features here may or may not be added to the main site.</h3>
-        
-        <div class="Total_Post">
-        <div class="Post_Header">
-        <div class="post_title">Test Post<div class="post_id">TP1</div></div>           
-        <div class="date_container"><div class="date_text">Uploaded on Friday, February 19th, 2021 -- (9:16 PM)</div></div></div>
-        <div class="post">
-            First test post on miscellaneous. The Miscellaneous Board will be converted into a testing spot for new features that 
-            will be (or may not be) implemented across the site.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            I need to just take up space with this post so...<br><br><br><br><br><br><br><br><br><br><br><br>Nothing to see here.<br>
-        </div>
-          <a href="archived.html"><div class="View_Button">Test Button</div></a>
-        </div>
-        
-    </body>
-</html>
