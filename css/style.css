@@ -59,6 +59,14 @@
               color: #ffffff;
             }
 
+            ul {
+               padding: 3vh;
+              width: 0vh auto;
+              margin: 0px auto;
+              user-select: none;
+
+            }
+
             ol {
               padding: 3vh;
               width: 0vh auto;
