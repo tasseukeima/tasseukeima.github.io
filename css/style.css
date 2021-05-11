@@ -107,6 +107,12 @@
               border-radius: 5px;
             }
 
+            h3 {
+              position: middle;
+              padding: 10px;
+              color: #ffffff;
+            }
+
             .post_title {
               font: normal x-small verdana, arial, helvetica, sans-serif;
               color: rgb(255, 255, 255);
