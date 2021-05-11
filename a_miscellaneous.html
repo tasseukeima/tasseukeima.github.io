@@ -5,42 +5,105 @@
       <title>Tasseukeima</title>
         <style>
             
+             * {
+              margin: 0;
+              padding: 0;
+            }
+
             ::-moz-selection {color: white;
                          background-color: rgb(52, 128, 72);
             }
 
             body {
               background-color: rgb(23, 36, 66); 
-              margin: 0px;
+              padding-top: 10vh;
             }
             
-            h1 {
+            header {
+              margin: 0px auto;
+              background-color: #000000;
+              height: 10vh;
+              color: #ffffff;
               font: normal x-small verdana, arial, helvetica, sans-serif;
-              font-size: 30px; 
-              background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(50, 50, 50)); 
-              color: rgb(255, 255, 255); 
-              padding: 6px;
-              margin-bottom: 0px;
-              cursor: default;
-            }
-            
-            h2 {
-              background-color: rgb(0, 0, 0);
-              margin-top: 0px;
-              margin-bottom: 150px;
+              width: 100%;
+              overflow: auto;
+              border-bottom: 10px;
+              position: fixed;
+              top: 0;
+              box-shadow: 0 0 30px 0 #000000;
             }
 
-            h3 {
-              font: normal x-small verdana, arial, helvetica, sans-serif;
-              font-size: 15px;
-              margin-top: 50px;
-              float: 10px;
-              width: auto;
-              color: rgb(255, 255, 255);
+            #Tasseukeima {
+              margin-left: 1vh;
+              background-color: #000000;
+              color: #63ba86;
+              font: bolder x-small verdana, arial, helvetica, sans-serif;
+              font-size: 20px;
+              width: 0vh auto;
+              height: auto;
+              padding: 3vh;
+              float: left;
+              cursor: default;
+              transition: 0.3s;
+              user-select: none;
+            }
+
+            #Tasseukeima:hover {
+              transition: 0.3s;
+            }
+
+            #Page_Name {
+              color: #1cc6e8;
+              font-weight: lighter;
+              transition: 0.3s;
+            }
+
+            #Page_Name:hover {
+              transition: 0.3s;
+            }
+
+            #TIPN {
+              color: #ffffff;
+            }
+
+            ul {
+              padding: 3vh;
+              width: 0vh auto;
+              margin: 0px auto;
+              user-select: none;
+            }
+
+            ul li {
+              display: inline-block;
+              float: right;
+              padding: 8px;
+              transition: 0.3s;
+            }
+
+            ul li:hover {
+              transform: translateY(6px);
+              transition-duration: 0.3s;
+            }
+
+            ul li a {
+              background-color: #000;
+              margin: 0px auto; 
+              text-align: center;  
               text-decoration: none;
-              text-align: center;
-              padding-top: 40px;
-              margin-bottom: 25px;
+              font-family: sans-serif;
+              font-size: 16px;
+              margin-top: 0px;
+              font-weight: normal;
+              color: #ffffff;
+              padding: 2vh;
+              transition: 0.5s;
+              border-radius: 5px;
+            }
+
+            ul li a:hover {
+              background-color: #3d3d3d;
+              transition: 0.5s;
+              border-radius: 5px;
             }
 
             .post_title {
@@ -57,6 +120,7 @@
               border-color: rgb(64, 89, 148);
               border-style: solid;
               border-bottom-color: rgb(23, 36, 66);
+              top: 50;
             }
             
             .date_container {
@@ -153,6 +217,8 @@
               border-width: 2px;
               border-style: solid;
               border-color: rgb(23, 36, 66);
+              position: static;
+              top: 50;
             }
 
             .Total_Post:hover {
@@ -174,92 +240,14 @@
               font-weight: normal;             
             }
             
-            .main_containter {
-              margin: 0px auto; 
-              width: auto;
-              text-align: center
-              margin-bottom: 0px; 
-            }
-            
-            .upper_title {
-              margin: 0px auto; 
-              text-align: center;
-              width: auto;
-            }    
-                
-            #tass_board {
-              text-align: center;
-              width: auto;
-            }
-            
             h6 {
+              font: normal small verdana, arial, helvetica, sans-serif;
+              font-size: 10px;
+              color: #ffffff;
               text-align: center;
               margin-top: 20px;
               margin-left: auto;
               margin-right: auto;
-            }
-            
-            #Home {
-              margin-right: 12px;
-              background-color: rgb(0, 0, 0);
-              padding: 7px;
-              color: rgb(255, 255, 255);
-              text-decoration: none;
-              border-radius: 20px 20px 20px 20px;
-              font-family: sans-serif;
-              font-style: thin;
-            }
-
-            #Home:hover {
-              background-color: rgb(100, 100, 100);
-            }
-            
-            #Main_Board {
-              margin-right: 12px;
-              margin-left:12px;
-              background-color: rgb(0, 0, 0);
-              padding: 7px;
-              color: rgb(255, 255, 255);
-              text-decoration:none;
-              border-radius: 20px 20px 20px 20px;
-              font-family: sans-serif;
-              font-style: thin;
-            }
-            
-            #Main_Board:hover {
-              background-color: rgb(100, 100, 100);
-            }
-
-            #Archived {
-              margin-right: 12px;
-              margin-left:12px;
-              background-color: rgb(0, 0, 0);
-              padding: 7px;
-              color: rgb(255, 255, 255);
-              text-decoration:none;
-              border-radius: 20px 20px 20px 20px;
-              font-family: sans-serif;
-              font-style: thin;
-            }
-
-            #Archived:hover {
-              background-color: rgb(100, 100, 100);
-            }
-
-            #Index {
-              margin-right: 12px;
-              margin-left:12px;
-              background-color: rgb(0, 0, 0);
-              padding: 7px;
-              color: rgb(255, 255, 255);
-              text-decoration:none;
-              border-radius: 20px 20px 20px 20px;
-              font-family: sans-serif;
-              font-style: thin;
-            }
-
-            #Index:hover {
-              background-color: rgb(100, 100, 100);
             }
 
             .View_Button {
@@ -304,36 +292,35 @@
             }
 
             .Small_Button {
-              background-color: rgb(13, 167, 214);
+              background-color: rgb(23, 36, 66);
+              border-color: rgb(23, 36, 66);
               padding: 10px;
               color: rgb(255, 255, 255);
               text-align: center;
               border-radius: 5px 5px 5px 5px;
               font-size: 15px;
+              transition: 0.3s;
             }
 
             .Small_Button:hover {
               background-color: rgb(7, 179, 232);
               cursor: pointer;
+              transition: 0.3s;
+              border-color: rgb(7, 179, 232);
             }
-        
         </style>
   </head>
     <body>
 
-        <div class="main_containter">
-                <h1 class="upper_title">
-                    <span id="tass_board">
-                        Archived
-                    </span>
-                      <h2 class="lower_title">
-                        <a href="home.html" id="Home">Home</a>
-                        <a href="main_board.html" id="Main_Board">Main Board</a>
-                        <a href="archived.html" id="Archived">Archived</a>
-                        <a href="index.html" id="Index">Index</a>
-                      </h2>
-                </h1>
-            </div>
+      <header>
+        <div id="Tasseukeima">Tasseukeima:<span id="Page_Name"> Experimental</span></div>
+        <ul>
+          <li><a href="index.html">Index</a></li>
+          <li><a href="archived.html">Archived</a></li>
+          <li><a href="main_board.html">Main Board</a></li>
+          <li><a href="home.html">Home</a></li>
+        </ul>
+      </header>
 
         <div class="Total_Post">
         <div class="Post_Header">
