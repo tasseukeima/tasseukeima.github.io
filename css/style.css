@@ -43,6 +43,7 @@
 
             #Tasseukeima:hover {
               transition: 0.3s;
+              color: #ffffff;
             }
 
             #Page_Name {
@@ -316,5 +317,5 @@
               background-color: rgb(7, 179, 232);
               cursor: pointer;
               transition: 0.3s;
-              border-color: rgb(7, 179, 232);
+              border-color: rgb(64, 89, 148)
             }
