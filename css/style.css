@@ -1,4 +1,4 @@
-             * {
+                 * {
               margin: 0;
               padding: 0;
             }
@@ -238,7 +238,7 @@
               border-width: 2px;
               background-color: rgb(64, 89, 148);
               border-radius: 5px 5px 5px 5px;
-              box-shadow: 30px 30px 30px 30px #000000;
+              box-shadow: 5px 5px 25px 10px #000000;
             }
 
             .lower_title {
