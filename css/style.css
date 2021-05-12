@@ -304,7 +304,7 @@
 
             .Small_Button {
               background-color: rgb(23, 36, 66);
-              border-color: rgb(23, 36, 66);
+              border-color: rgb(7, 179, 232);
               padding: 10px;
               color: rgb(255, 255, 255);
               text-align: center;
@@ -319,5 +319,5 @@
               background-color: rgb(7, 179, 232);
               cursor: pointer;
               transition: 0.3s;
-              border-color: rgb(64, 89, 148)
+              border-color: rgb(7, 179, 232);
             }
