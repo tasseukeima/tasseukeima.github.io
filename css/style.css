@@ -8,7 +8,7 @@
             }
 
             body {
-              background-color: rgb(23, 36, 66); 
+              background-color: rgb(23, 36, 66);
               padding-top: 15vh;
             }
             
@@ -231,7 +231,7 @@
               margin-left: 175px;
               margin-right: 175px;
               margin-bottom: 75px;
-              margin-top: 75px;
+              margin-top: 8vh;
               cursor: default;
               border-width: 2px;
               border-style: solid;
