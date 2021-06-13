@@ -185,6 +185,8 @@
               margin-right: 35px;
               position: fixed;
               margin-top: 15vh;
+              right: 1080px;
+              left: none;
             }
 
             #Left_Side_Bar_Total_Post {
