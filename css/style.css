@@ -3,16 +3,22 @@
               padding: 0;
             }
 
-            ::-moz-selection {color: white;
-            background-color: rgb(52, 128, 72);
+            ::selection {color: black;
+            background-color: mediumpurple;
             }
 
             body {
-              background-color: rgb(23, 36, 66);
-              padding-top: 15vh;
+              background-image: url("https://i.redd.it/1iwcit1gidyy.jpg");
+              background-attachment: fixed;
+              background-position: center;
+              background-size: 100em 50em;
+              padding-top: none;
+              font: lighter Source Sans Pro, arial, helvetica, sans-serif;
+              padding-left: none;
             }
             
             header {
+              z-index: 2;
               margin: 0px auto;
               background-color: #000000;
               height: 10vh;
@@ -50,11 +56,11 @@
             #Tasseukeima:hover {
               transition: 0.3s;
               color: #ffffff;
-              background-color: rgba(26, 26, 26, 0.5);
+              background-color: rgba(20, 20, 20, 0);
             }
 
             header:hover #Tasseukeima, header.hover #Tasseukeima {
-              background-color: rgba(26, 26, 26, 0.5);
+              background-color: rgba(20, 20, 20, 0.5);
               transition: 0.1s;
             }
 
@@ -67,20 +73,15 @@
             }
 
             #Page_Name:hover {
-              transition: 0.2s;
+              transition: 0.12s;
               color: #ffffff;
               background-color: inherit;
             }
 
-            #TIPN {
-              color: #ffffff;
-            }
-
             header:hover ol li a, header.hover ol li a {
-              background-color: rgba(20, 20, 20);
+              background-color: rgba(20, 20, 20, 0);
               transition: 0.15s;
               height: 15vh;
-              transform: translateY(5vh);
             }
 
             header:hover ol li a:hover, header.hover ol li a.hover {
@@ -111,7 +112,7 @@
             }
 
             ol li:hover {
-              transform: translateY(6px);
+              transform: scale(1.1);
               transition-duration: 0.3s;
             }
 
@@ -137,12 +138,20 @@
             }
 
             h3 {
-              margin-top: 4vmin;
-              margin: 2vmin;
-              padding: 10px;
-              color: #ffffff;
+              font: bold small verdana, arial, helvetica, sans-serif;
+              font-size: 20px;
+              color: #fff;
+              margin-left: 150px;
+              margin-right: 150px;
+              margin-top: 5vh;
+              padding: 1px;
               left: 50%;
               text-align: center;
+              cursor: default;
+              background-color: rgba(206, 82, 222, 0.75);
+              display: inline-block;
+              border-radius: 2px;
+              user-select: none;
             }
 
             u {
@@ -151,43 +160,169 @@
             }
 
             h6 {
-              font: normal small verdana, arial, helvetica, sans-serif;
+              font: bold small verdana, arial, helvetica, sans-serif;
               font-size: 10px;
               color: #ffffff;
+              background-color: rgba(23, 36, 66, 0.85);
               text-align: center;
               margin-top: 20px;
               margin-left: auto;
               margin-right: auto;
               margin-bottom: 20px;
+              outline-width: 1px;
+              outline-color: rgb(64, 89, 148);
+              outline-style: solid;
+              padding: 2px;
+              margin-left: 65em;
+              margin-right: 65em;
+              border-radius: 3px;
+              cursor: default;
+              user-select: none;
+            }
+
+            #Left_Side_Bar {
+              float: left;
+              margin-right: 35px;
+              position: fixed;
+              margin-top: 15vh;
+            }
+
+            #Left_Side_Bar_Total_Post {
+              margin-bottom: 75px;
+              margin-top: 59px;
+              width: auto;
+              height: auto;
+              cursor: default;
+              border-width: 2px;
+              border-style: solid;
+              border-color: transparent;
+              border-radius: 5px;
+              position: static;
+              top: 50;
+              transition: 0.3s ease;
+              cursor: pointer;
+              transform: scale(1.01);
+            }
+
+
+            #Left_Side_Bar_Post_Title {
+              font: normal small verdana, arial, helvetica, sans-serif;
+              color: rgb(255, 255, 255);
+              font-size: 40px; 
+              font-weight: lighter;
+              margin-bottom: 0px 5px 0px 0px;
+              background-color: rgba(23, 36, 66, 0.85);
+              padding: 12px;
+              border-radius: 0px 5px 0px 0px;
+              border-width: 1px;
+              border-color: rgb(64, 89, 148);
+              border-style: solid;
+              border-bottom: none;
+              border-left: none;
+              top: 50;
+              transition: 0.25s;
+              user-select: none;
+            }
+
+            #Left_Side_Bar_Post {
+              background-color: rgba(23, 36, 66, 0.85);
+              color: rgb(255, 255, 255);
+              font-size: 60px; 
+              font: normal small verdana, arial, helvetica, sans-serif;
+              font-weight: bold;
+              padding: 12px;
+              margin-top: 0px;
+              border-style: solid;
+              border-width: 1px; 
+              border-left-color: rgb(64, 89, 148);
+              border-right-color: rgb(64, 89, 148);
+              border-top: none;
+              border-left: none;
+              border-bottom-color: rgb(64, 89, 148);
+              border-radius: 0px 0px 5px 0px;
+              transition: 0.25s;
+              user-select: none;
+            }
+
+            .Post_Feed {
+              float: right;
+              margin-right: 30px;
+              margin-left: 450px;
+              margin-top: 23vh;
+            }
+
+            .Total_Post {
+              margin-bottom: 75px;
+              margin-top: 8vh;
+              width: auto;
+              height: auto;
+              cursor: default;
+              border-width: 2px;
+              border-style: solid;
+              border-color: transparent;
+              border-radius: 5px;
+              position: static;
+              top: 50;
+              transition: 0.3s ease;
+              cursor: pointer;
+            }
+
+            .Total_Post:hover {
+              z-index: 1;
+              transition: 0.3s ease;
+              border-color: rgb(75, 191, 253);
+              border-width: 2px;
+              border-radius: 5px;
+              box-shadow: 8px 8px 15px 10px #000000;
+              transform: scale(1.005);
+            }
+
+            .Total_Post:active {
+              margin-bottom: 75px;
+              margin-top: 8vh;
+              width: auto;
+              height: auto;
+              cursor: default;
+              border-width: 2px;
+              border-style: solid;
+              border-color: transparent;
+              border-radius: 5px;
+              position: static;
+              top: 50;
+              transition: 0.3s ease;
+              cursor: pointer;
+              transform: scale(1);
+              box-shadow: none;
             }
 
             .Post_Title {
-              font: normal x-small verdana, arial, helvetica, sans-serif;
+              font: normal small verdana, arial, helvetica, sans-serif;
               color: rgb(255, 255, 255);
               font-size: 40px; 
               font-weight: lighter;
               margin-bottom: 0px;
-              background-color: rgb(23, 36, 66);
+              background-color: rgba(23, 36, 66, 0.85);
               padding: 12px;
-              border-radius: 3px 3px 0px 0px;
+              border-radius: 5px 5px 0px 0px;
               border-width: 1px;
               border-color: rgb(64, 89, 148);
               border-style: solid;
-              border-bottom-color: rgb(23, 36, 66);
+              border-bottom: none;
               top: 50;
-              text-decoration: underline 0.075em rgba(0, 0, 0, 0);
-              transition: text-decoration-color 300ms, text-underline-offset 300ms;
+              transition: 0.25s;
+              user-select: none;
             }
             
             .Post_Title:hover {
-              text-decoration-color: rgba(57, 73, 136, 0.86);  
+              color: rgb(75, 191, 253);
+              transition: 0.25s;
             }
 
             .Post_id {
               font: normal x-small verdana, arial, helvetica, sans-serif;
               font-size: 12px;
-              background-color: rgb(23, 36, 66);
-              font-color: rgb(0, 0, 0);
+              background-color: rgba(23, 36, 66, 0.85);
+              color: #ffffff;
               padding: 6px;
               border-radius: 15px 15px 15px 15px;
               width: auto; 
@@ -207,7 +342,7 @@
             }
             
             .Post {
-              background-color: rgb(23, 36, 66);
+              background-color: rgba(23, 36, 66, 0.85);
               color: rgb(255, 255, 255);
               font-size: 60px; 
               font: normal small verdana, arial, helvetica, sans-serif;
@@ -218,37 +353,40 @@
               border-width: 1px; 
               border-left-color: rgb(64, 89, 148);
               border-right-color: rgb(64, 89, 148);
-              border-top-color: rgb(23, 36, 66);
+              border-top: none;
               border-bottom-color: rgb(64, 89, 148);
-              transition: 0.25s; 
+              border-radius: 0px 0px 5px 5px;
+              transition: 0.25s;
             }
 
             .Post:hover {
               border-bottom-color: rgb(38, 55, 94);
             }
 
-            .Total_Post {
-              margin-left: 175px;
-              margin-right: 175px;
-              margin-bottom: 75px;
-              margin-top: 8vh;
-              cursor: default;
-              border-width: 2px;
-              border-style: solid;
-              border-color: rgb(23, 36, 66);
-              position: static;
-              top: 50;
-              transition: 0.1s ease;
-              cursor: pointer;
+            .Post:hover .Post_Title.hover {
+              color: rgb(75, 191, 253);
+              transition: 0.25s;
             }
 
-            .Total_Post:hover {
-              transition: 0.075s ease;
-              border-color: rgb(75, 191, 253);
-              border-width: 2px;
-              background-color: rgb(64, 89, 148);
-              border-radius: 5px 5px 5px 5px;
-              box-shadow: 5px 5px 20px 8px #000000;
+            .Post_With_Button {
+              background-color: rgba(23, 36, 66, 0.85);
+              color: rgb(255, 255, 255);
+              font-size: 60px; 
+              font: normal small verdana, arial, helvetica, sans-serif;
+              font-weight: bold;
+              padding: 12px;
+              margin-top: 0px;
+              border-style: solid;
+              border-width: 1px; 
+              border-left-color: rgb(64, 89, 148);
+              border-right-color: rgb(64, 89, 148);
+              border-top: none;
+              border-bottom-color: rgb(64, 89, 148);
+              transition: 0.25s;
+            }
+
+            .Post_With_Button:hover {
+              border-bottom-color: rgb(38, 55, 94);
             }
 
             .lower_title {
@@ -267,7 +405,7 @@
               height: 20px;
               font-size: 50px;
               font: normal small verdana, arial, helvetica, sans-serif;
-              font-color: rgb(255, 255, 255);
+              color: #ffffff;
               font-weight: bold;
               background-color: rgb(23, 36, 66);
               color: rgb(255, 255, 255);
@@ -318,6 +456,7 @@
               border-radius: 5px 5px 5px 5px;
               font-size: 15px;
               transition: 0.3s;
+              user-select: none;
             }
 
             .Small_Button:hover {
@@ -326,4 +465,6 @@
               cursor: pointer;
               transition: 0.3s;
               border-color: rgb(7, 179, 232);
+              border-radius: 20px;
+              user-select: none;
             }
