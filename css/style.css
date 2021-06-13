@@ -161,7 +161,7 @@
               margin-bottom: 20px;
             }
 
-            .post_title {
+            .Post_Title {
               font: normal x-small verdana, arial, helvetica, sans-serif;
               color: rgb(255, 255, 255);
               font-size: 40px; 
@@ -179,11 +179,11 @@
               transition: text-decoration-color 300ms, text-underline-offset 300ms;
             }
             
-            .post_title:hover {
+            .Post_Title:hover {
               text-decoration-color: rgba(57, 73, 136, 0.86);  
             }
 
-            .post_id {
+            .Post_id {
               font: normal x-small verdana, arial, helvetica, sans-serif;
               font-size: 12px;
               background-color: rgb(23, 36, 66);
@@ -201,12 +201,12 @@
               user-select: none;
             }
 
-            .post_id:hover {
+            .Post_id:hover {
               background-color: rgb(64, 89, 148);
               border-color: rgb(23, 36, 66);
             }
             
-            .post {
+            .Post {
               background-color: rgb(23, 36, 66);
               color: rgb(255, 255, 255);
               font-size: 60px; 
@@ -223,7 +223,7 @@
               transition: 0.25s; 
             }
 
-            .post:hover {
+            .Post:hover {
               border-bottom-color: rgb(38, 55, 94);
             }
 
