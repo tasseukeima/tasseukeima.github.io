@@ -204,6 +204,7 @@
               transition: 0.3s ease;
               cursor: pointer;
               transform: scale(1.01);
+              float: left;
             }
 
 
