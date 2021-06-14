@@ -181,6 +181,11 @@
               user-select: none;
             }
 
+            .Single_Post {
+              margin-left: 175px;
+              margin-right: 175px;
+            }
+
             #Left_Side_Bar {
               float: left;
               margin-right: 35px;
