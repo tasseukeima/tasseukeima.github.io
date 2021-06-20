@@ -184,8 +184,6 @@
               margin-bottom: 5vh;
               margin-left: 175px;
               margin-right: 175px;
-              background-color: white;
-              opacity: 50%;
               justify-content: center;
               display: flex;
             }
@@ -201,8 +199,6 @@
               margin: 0vh;
               right: 1150px;
               left: none;
-              background-color: white;
-              opacity: 50%;
             }
 
             #Left_Side_Bar_Total_Post {
@@ -266,8 +262,6 @@
             .Post_Feed {
               float: right;
               margin: 0vh;
-              background-color: white;
-              opacity: 50%;
             }
 
             .Total_Post {
