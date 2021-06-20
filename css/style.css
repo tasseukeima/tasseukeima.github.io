@@ -292,8 +292,8 @@
             }
 
             .Total_Post:active {
-              margin-bottom: 75px;
-              margin-top: 8vh;
+              margin-bottom: 10vh;
+              margin-top: 10vh;
               width: 1000px;
               height: auto;
               cursor: default;
