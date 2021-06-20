@@ -10,8 +10,8 @@
               padding: 0;
             }
 
-            ::-moz-selection {color: white;
-            background-color: rgb(52, 128, 72);
+            ::selection {color: black;
+            background-color: mediumpurple;
             }
 
             body {
@@ -19,8 +19,10 @@
               background-attachment: fixed;
               background-position: center;
               background-size: 100em 50em;
-              padding-top: 15vh;
+              background-color: #2b416e;
+              padding-top: none;
               font: lighter Source Sans Pro, arial, helvetica, sans-serif;
+              padding-left: none;
             }
             
             header {
@@ -62,11 +64,11 @@
             #Tasseukeima:hover {
               transition: 0.3s;
               color: #ffffff;
-              background-color: rgba(26, 26, 26, 0.5);
+              background-color: rgba(20, 20, 20, 0);
             }
 
             header:hover #Tasseukeima, header.hover #Tasseukeima {
-              background-color: rgba(26, 26, 26, 0.5);
+              background-color: rgba(20, 20, 20, 0.5);
               transition: 0.1s;
             }
 
@@ -79,13 +81,13 @@
             }
 
             #Page_Name:hover {
-              transition: 0.15s;
+              transition: 0.12s;
               color: #ffffff;
               background-color: inherit;
             }
 
             header:hover ol li a, header.hover ol li a {
-              background-color: rgba(20, 20, 20);
+              background-color: rgba(20, 20, 20, 0);
               transition: 0.15s;
               height: 15vh;
             }
@@ -144,12 +146,20 @@
             }
 
             h3 {
-              margin-top: 4vmin;
-              margin: 2vmin;
-              padding: 10px;
-              color: #ffffff;
+              font: bold small verdana, arial, helvetica, sans-serif;
+              font-size: 20px;
+              color: #fff;
+              margin-left: 150px;
+              margin-right: 150px;
+              margin-top: 5vh;
+              padding: 1px;
               left: 50%;
               text-align: center;
+              cursor: default;
+              background-color: rgba(206, 82, 222, 0.75);
+              display: inline-block;
+              border-radius: 2px;
+              user-select: none;
             }
 
             u {
@@ -158,17 +168,150 @@
             }
 
             h6 {
-              font: normal small verdana, arial, helvetica, sans-serif;
+              font: bold small verdana, arial, helvetica, sans-serif;
               font-size: 10px;
               color: #ffffff;
+              background-color: rgba(23, 36, 66, 0.85);
               text-align: center;
               margin-top: 20px;
               margin-left: auto;
               margin-right: auto;
               margin-bottom: 20px;
+              outline-width: 1px;
+              outline-color: rgb(64, 89, 148);
+              outline-style: solid;
+              padding: 2px;
+              margin-left: 65em;
+              margin-right: 65em;
+              border-radius: 3px;
+              cursor: default;
+              user-select: none;
             }
 
-            .post_title {
+            .Single_Post {
+              margin-left: 175px;
+              margin-right: 175px;
+            }
+
+            #Left_Side_Bar {
+              float: left;
+              margin-right: 35px;
+              position: fixed;
+              margin-top: 15vh;
+              right: 1080px;
+              left: none;
+            }
+
+            #Left_Side_Bar_Total_Post {
+              margin-bottom: 75px;
+              margin-top: 59px;
+              width: auto;
+              height: auto;
+              cursor: default;
+              border-width: 2px;
+              border-style: solid;
+              border-color: transparent;
+              border-radius: 5px;
+              position: static;
+              top: 50;
+              transition: 0.3s ease;
+              cursor: pointer;
+              transform: scale(1.01);
+              float: left;
+            }
+
+
+            #Left_Side_Bar_Post_Title {
+              font: normal small verdana, arial, helvetica, sans-serif;
+              color: rgb(255, 255, 255);
+              font-size: 40px; 
+              font-weight: lighter;
+              margin-bottom: 0px 5px 0px 0px;
+              background-color: rgba(23, 36, 66, 0.85);
+              padding: 12px;
+              border-radius: 0px 5px 0px 0px;
+              border-width: 1px;
+              border-color: rgb(64, 89, 148);
+              border-style: solid;
+              border-bottom: none;
+              border-left: none;
+              top: 50;
+              transition: 0.25s;
+              user-select: none;
+            }
+
+            #Left_Side_Bar_Post {
+              background-color: rgba(23, 36, 66, 0.85);
+              color: rgb(255, 255, 255);
+              font-size: 60px; 
+              font: normal small verdana, arial, helvetica, sans-serif;
+              font-weight: bold;
+              padding: 12px;
+              margin-top: 0px;
+              border-style: solid;
+              border-width: 1px; 
+              border-left-color: rgb(64, 89, 148);
+              border-right-color: rgb(64, 89, 148);
+              border-top: none;
+              border-left: none;
+              border-bottom-color: rgb(64, 89, 148);
+              border-radius: 0px 0px 5px 0px;
+              transition: 0.25s;
+              user-select: none;
+            }
+
+            .Post_Feed {
+              float: right;
+              margin-right: 30px;
+              margin-left: 450px;
+              margin-top: 23vh;
+            }
+
+            .Total_Post {
+              margin-bottom: 75px;
+              margin-top: 8vh;
+              width: auto;
+              height: auto;
+              cursor: default;
+              border-width: 2px;
+              border-style: solid;
+              border-color: transparent;
+              border-radius: 5px;
+              position: static;
+              top: 50;
+              transition: 0.3s ease;
+              cursor: pointer;
+            }
+
+            .Total_Post:hover {
+              z-index: 1;
+              transition: 0.3s ease;
+              border-color: rgb(75, 191, 253);
+              border-width: 2px;
+              border-radius: 5px;
+              box-shadow: 8px 8px 15px 10px #000000;
+              transform: scale(1.005);
+            }
+
+            .Total_Post:active {
+              margin-bottom: 75px;
+              margin-top: 8vh;
+              width: auto;
+              height: auto;
+              cursor: default;
+              border-width: 2px;
+              border-style: solid;
+              border-color: transparent;
+              border-radius: 5px;
+              position: static;
+              top: 50;
+              transition: 0.3s ease;
+              cursor: pointer;
+              transform: scale(1);
+              box-shadow: none;
+            }
+
+            .Post_Title {
               font: normal small verdana, arial, helvetica, sans-serif;
               color: rgb(255, 255, 255);
               font-size: 40px; 
@@ -176,21 +319,22 @@
               margin-bottom: 0px;
               background-color: rgba(23, 36, 66, 0.85);
               padding: 12px;
-              border-radius: 3px 3px 0px 0px;
+              border-radius: 5px 5px 0px 0px;
               border-width: 1px;
               border-color: rgb(64, 89, 148);
               border-style: solid;
               border-bottom: none;
               top: 50;
               transition: 0.25s;
+              user-select: none;
             }
             
-            .post_title:hover {
+            .Post_Title:hover {
               color: rgb(75, 191, 253);
               transition: 0.25s;
             }
 
-            .post_id {
+            .Post_id {
               font: normal x-small verdana, arial, helvetica, sans-serif;
               font-size: 12px;
               background-color: rgba(23, 36, 66, 0.85);
@@ -208,12 +352,12 @@
               user-select: none;
             }
 
-            .post_id:hover {
+            .Post_id:hover {
               background-color: rgb(64, 89, 148);
               border-color: rgb(23, 36, 66);
             }
             
-            .post {
+            .Post {
               background-color: rgba(23, 36, 66, 0.85);
               color: rgb(255, 255, 255);
               font-size: 60px; 
@@ -227,36 +371,38 @@
               border-right-color: rgb(64, 89, 148);
               border-top: none;
               border-bottom-color: rgb(64, 89, 148);
-              transition: 0.25s; 
+              border-radius: 0px 0px 5px 5px;
+              transition: 0.25s;
             }
 
-            .post:hover {
+            .Post:hover {
               border-bottom-color: rgb(38, 55, 94);
             }
 
-            .Total_Post {
-              margin-left: 175px;
-              margin-right: 175px;
-              margin-bottom: 75px;
-              margin-top: 8vh;
-              cursor: default;
-              border-width: 2px;
-              border-style: solid;
-              border-color: transparent;
-              position: static;
-              top: 50;
-              transition: 0.3s ease;
-              cursor: pointer;
+            .Post:hover .Post_Title.hover {
+              color: rgb(75, 191, 253);
+              transition: 0.25s;
             }
 
-            .Total_Post:hover {
-              z-index: 1;
-              transition: 0.3s ease;
-              border-color: rgb(75, 191, 253);
-              border-width: 2px;
-              border-radius: 5px 5px 5px 5px;
-              box-shadow: 8px 8px 15px 10px #000000;
-              transform: scale(1.005);
+            .Post_With_Button {
+              background-color: rgba(23, 36, 66, 0.85);
+              color: rgb(255, 255, 255);
+              font-size: 60px; 
+              font: normal small verdana, arial, helvetica, sans-serif;
+              font-weight: bold;
+              padding: 12px;
+              margin-top: 0px;
+              border-style: solid;
+              border-width: 1px; 
+              border-left-color: rgb(64, 89, 148);
+              border-right-color: rgb(64, 89, 148);
+              border-top: none;
+              border-bottom-color: rgb(64, 89, 148);
+              transition: 0.25s;
+            }
+
+            .Post_With_Button:hover {
+              border-bottom-color: rgb(38, 55, 94);
             }
 
             .lower_title {
@@ -326,6 +472,7 @@
               border-radius: 5px 5px 5px 5px;
               font-size: 15px;
               transition: 0.3s;
+              user-select: none;
             }
 
             .Small_Button:hover {
@@ -334,34 +481,70 @@
               cursor: pointer;
               transition: 0.3s;
               border-color: rgb(7, 179, 232);
+              border-radius: 20px;
+              user-select: none;
             }
         </style>
   </head>
     <body>
 
       <header>
-        <div id="Tasseukeima">Tasseukeima:<span id="Page_Name"> Experimental</span></div>
+        <div id="Tasseukeima">Tasseukeima:<span id="Page_Name"> Index</span></div>
         <ol>
-          <li><a href="index.html">Index</a></li>
-          <li><a href="archived.html">Archived</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+          <li><a href="about.html">About This Website</a></li>
           <li><a href="main_board.html">Main Board</a></li>
           <li><a href="home.html">Home</a></li>
         </ol>
       </header>
+        
+      <div id="Left_Side_Bar">
 
-      <h3>Test features that may be implemented below.</h3>
+        <h3>Welcome</h3>
+
+        <div id="Left_Side_Bar_Total_Post">
+        <div id="Left_Side_Bar_Post_Title">Directory</div>           
+        <div id="Left_Side_Bar_Post">
+            Below is a list of every main page on the website:
+            <br><br><br><br>
+              <a href="home.html"><div class="Small_Button">Home</div></a>
+              <br><br>
+              <a href="main_board.html"><div class="Small_Button">Main Board</div></a>
+              <br><br>
+              <a href="archived.html"><div class="Small_Button">Archived</div></a>
+              <br><br>
+              <a href="index.html"><div class="Small_Button">Index Page</div></a>
+        </div>
+        </div>
+      </div>
+        
+      <div class="Post_Feed">
 
         <div class="Total_Post">
-        <div class="post_title">Test Post<div class="post_id">Friday, February 19th, 2021 at (9:16 PM)</div></div>           
-        <div class="post">
-            First test post on miscellaneous. The Miscellaneous Board will be converted into a testing spot for new features that 
-            will be (or may not be) implemented across the site.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            I need to just take up space with this post so...<br><br><br><br><br><br><br><br><br><br><br><br>Nothing to see here.<br>
+          <div class="Post_Title">Experimental Properties<div class="Post_id">Updated on 6/19/2021 at 4:50 PM</div></div>           
+          <div class="Post_With_Button">
+            This is the Experimental section. This is where Snapshots of potential future iterations of the website wil appear.<br><br>
+            I need to take up space witht this post.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>End of post.
+          </div>
+          <a href="experimental.html"><div class="View_Button">Experimental Button</div></a>
         </div>
-          <a href="archived.html"><div class="View_Button">Test Button</div></a>
+
+
+      <div class="Total_Post">
+          <div class="Post_Title">Experimental Properties<div class="Post_id">Updated on 6/19/2021 at 4:50 PM</div></div>           
+          <div class="Post_With_Button">
+            This is the Experimental section. This is where Snapshots of potential future iterations of the website wil appear.<br><br>
+            I need to take up space witht this post.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>End of post.
+          </div>
+          <a href="experimental.html"><div class="View_Button">Experimental Button</div></a>
+        </div>
+
         
-    <script> window.alert(This page might be broken at times.); </script>
+    <script> 
+      window.alert("This is the current Snapshot of experimental features. Keep in mind that this page might be broken at times."); 
+    </script>
 
     </body>
 </html>
