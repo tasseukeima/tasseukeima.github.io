@@ -203,7 +203,7 @@
 
             #Left_Side_Bar_Total_Post {
               margin-bottom: 75px;
-              margin-top: 59px;
+              margin-top: 2vh;
               width: auto;
               height: auto;
               cursor: default;
@@ -266,7 +266,7 @@
 
             .Total_Post {
               margin-bottom: 8vh;
-              margin-top: 8vh;
+              margin-top: 2vh;
               margin-right: 8vh;
               margin-left: 8vh;
               width: 1000px;
