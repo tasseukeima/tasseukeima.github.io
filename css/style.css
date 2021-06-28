@@ -80,13 +80,13 @@
             }
 
             header:hover ol li a, header.hover ol li a {
-              background-color: rgba(20, 20, 20, 0);
+              color: #1cc6e8;
               transition: 0.15s;
               height: 15vh;
             }
 
             header:hover ol li a:hover, header.hover ol li a.hover {
-              background-color: #3d3d3d;
+              color: #63ba86;
               transition: 0.2s;
               border-radius: 5px;
             }
@@ -95,7 +95,6 @@
               padding: 3vh;
               width: 0vh auto;
               margin: 0px auto;
-
             }
 
             ol {
@@ -113,12 +112,11 @@
             }
 
             ol li:hover {
-              transform: scale(1.1);
+              transform: scale(1.12);
               transition-duration: 0.3s;
             }
 
             ol li a {
-              background-color: #000;
               margin: 0px auto; 
               text-align: center;  
               text-decoration: none;
@@ -133,7 +131,7 @@
             }
 
             ol li a:hover {
-              background-color: #3d3d3d;
+              color: #1cc6e8;
               transition: 0.5s;
               border-radius: 5px;
             }
