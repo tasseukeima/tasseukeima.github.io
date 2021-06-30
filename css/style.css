@@ -290,8 +290,8 @@
             }
 
             .Total_Post:active {
-              margin-bottom: 10vh;
-              margin-top: 10vh;
+              margin-bottom: 8vh;
+              margin-top: 2vh;
               width: 1000px;
               height: auto;
               cursor: default;
@@ -303,7 +303,7 @@
               top: 50;
               transition: 0.3s ease;
               cursor: pointer;
-              transform: scale(1);
+              transform: scale(0.8);
               box-shadow: none;
             }
 
